@@ -1,0 +1,9 @@
+Step,Records,Note
+Records exported from Dimensions (13 Feb 2024),1521,
+Excluded: not about therapeutic use of phages,391,"386 coded 0, 5 coded -1"
+Relevant grants,1130,
+Excluded from dollar analyses: no amount in Dimensions,312,kept for count-based checks
+Grants with an amount,818,
+Excluded: start year outside 1999-2023,16,
+Analysed (dollar analyses),802,
+"Relevant grants without an amount, 1999-2023 (count-based checks)",272,

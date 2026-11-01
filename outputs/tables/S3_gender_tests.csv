@@ -1,0 +1,7 @@
+Comparison,Model,Mann-Whitney p,Adjusted difference (%),95% CI low (%),95% CI high (%),Regression p,N
+Female only vs Male only,"Main: team size, grant length, start year, funder, topic",0.047,-18.731,-32.289,-2.458,0.026,742
+Mixed vs Male only,"Main: team size, grant length, start year, funder, topic",0.045,-7.004,-29.891,23.355,0.614,742
+Female only vs Male only,"Amount per year of grant (team size, start year, funder, topic)",0.047,-21.651,-34.814,-5.831,0.009,742
+Mixed vs Male only,"Amount per year of grant (team size, start year, funder, topic)",0.045,-5.607,-29.117,25.7,0.693,742
+Female only vs Male only,"Simple model: team size, US funder, start year",0.047,-27.275,-42.739,-7.635,0.009,742
+Mixed vs Male only,"Simple model: team size, US funder, start year",0.045,58.401,7.86,132.625,0.019,742

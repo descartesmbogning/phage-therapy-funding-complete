@@ -1,0 +1,77 @@
+{
+  "grants": 802,
+  "usd_m": 318.6,
+  "median_grant": 180000.0,
+  "niaid_share_pct": 21.0,
+  "global_north_funders_pct": 98.3,
+  "lmic_low_recipients_pct": 0.33,
+  "high_income_recipients_pct": 97.8,
+  "global_south_recipients_pct": 2.1,
+  "china_share_of_global_south_pct": 73.1,
+  "domestic_funding_pct": 88.7,
+  "grant_growth": {
+    "annual_growth_pct": 12.2,
+    "ci_low": 10.0,
+    "ci_high": 14.5,
+    "years": "1999-2022"
+  },
+  "usd_growth": {
+    "annual_growth_pct": 16.6,
+    "ci_low": 12.6,
+    "ci_high": 20.7,
+    "years": "1999-2022"
+  },
+  "us_funders_pct": 47.7,
+  "niaid_share_by_period_pct": {
+    "1999-2008": 13.6,
+    "2009-2015": 17.4,
+    "2016-2023": 23.3
+  },
+  "us_share_by_period_pct": {
+    "1999-2008": 58.1,
+    "2009-2015": 44.1,
+    "2016-2023": 47.5
+  },
+  "hhi_funders": 610.0,
+  "hhi_funder_countries": 2501.0,
+  "hhi_recipient_countries": 2461.0,
+  "gini_institutions": 0.683,
+  "top10pct_institutions_share_pct": 53.4,
+  "multi_institution_grants": 135,
+  "multi_country_grants": 39,
+  "north_south_grants": 7,
+  "usd_growth_real_2023": {
+    "annual_growth_pct": 14.1,
+    "ci_low": 10.2,
+    "ci_high": 18.2,
+    "years": "1999-2022"
+  },
+  "total_usd_m_real_2023": 396.1,
+  "without_niaid_us_funders_pct": 33.8,
+  "without_niaid_grant_growth_pct": 11.7,
+  "without_niaid_usd_growth_pct": 16.2,
+  "relevant_grants_1999_2023": 1074,
+  "grants_without_amount_1999_2023": 272,
+  "unpriced_training_award_pct": 43.0,
+  "count_based_global_south_recipients_pct": 17.5,
+  "count_based_global_south_recipients_priced_pct": 11.8,
+  "imputed_global_south_recipients_pct_range": [
+    2.64,
+    3.8,
+    5.49
+  ],
+  "imputed_lmic_low_recipients_pct_central": 0.54,
+  "female_only_gap_main_pct": -18.7,
+  "female_only_gap_main_ci": [
+    -32.3,
+    -2.5
+  ],
+  "projects": 771,
+  "projects_from_multiple_records": 25,
+  "robustness_checks_changing_a_conclusion": 3,
+  "researchers_single_grant_pct": 83.9,
+  "antibiotic_resistance_rise_points": {
+    "paper_assignment": 22.9,
+    "refit_split": 32.5
+  }
+}

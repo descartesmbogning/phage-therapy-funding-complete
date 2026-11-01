@@ -1,0 +1,83 @@
+Funder Country,Recipient country,Grants (fractional),Domestic,"USD (M, fractional)"
+United States,United States,249.0,True,149.58
+United Kingdom,United Kingdom,49.57,True,21.81
+Czechia,Czechia,17.0,True,18.58
+Japan,Japan,111.0,True,13.46
+Poland,Poland,35.0,True,12.54
+Canada,Canada,71.0,True,11.13
+Australia,Australia,17.25,True,10.7
+Germany,Germany,11.0,True,10.65
+Switzerland,Switzerland,21.14,True,10.53
+France,France,9.58,True,6.15
+Portugal,Portugal,31.75,True,5.25
+European Union,France,1.5,False,5.12
+China,China,80.0,True,4.91
+Ireland,Ireland,2.0,True,3.39
+European Union,Belgium,1.7,False,3.17
+Finland,Finland,10.0,True,3.16
+Denmark,Denmark,6.0,True,2.78
+European Union,Netherlands,2.33,False,2.45
+European Union,Germany,1.25,False,1.7
+European Union,Switzerland,2.25,False,1.59
+Israel,Israel,2.0,True,1.43
+United States,Australia,3.0,False,1.23
+Sweden,Sweden,4.0,True,1.13
+New Zealand,New Zealand,3.0,True,1.13
+European Union,United Kingdom,1.53,False,1.04
+United Kingdom,United States,1.08,False,0.9
+Netherlands,Netherlands,1.0,True,0.88
+European Union,Ireland,0.75,False,0.8
+United States,Taiwan,2.0,False,0.68
+Slovakia,Slovakia,5.0,True,0.66
+European Union,Spain,2.67,False,0.66
+Norway,Norway,4.0,True,0.62
+United Kingdom,Belgium,0.7,False,0.6
+European Union,Denmark,2.25,False,0.58
+India,India,9.0,True,0.56
+Switzerland,United States,0.39,False,0.54
+United Kingdom,Switzerland,0.25,False,0.51
+United Kingdom,Germany,1.23,False,0.5
+Switzerland,France,0.67,False,0.5
+United Kingdom,Thailand,0.67,False,0.31
+European Union,Portugal,0.33,False,0.3
+United States,India,1.0,False,0.25
+European Union,Greece,0.5,False,0.24
+Australia,Canada,0.5,False,0.21
+European Union,Austria,1.0,False,0.2
+Switzerland,Canada,2.0,False,0.19
+European Union,Russia,0.42,False,0.18
+European Union,Italy,1.0,False,0.17
+European Union,South Africa,0.67,False,0.17
+European Union,Israel,1.0,False,0.17
+Spain,Spain,2.0,True,0.17
+Switzerland,Georgia,1.0,False,0.16
+United Kingdom,Brazil,0.33,False,0.15
+United Kingdom,Uganda,0.5,False,0.15
+European Union,United States,0.5,False,0.14
+European Union,Georgia,1.15,False,0.13
+United Kingdom,Italy,0.2,False,0.13
+United Kingdom,Australia,0.2,False,0.12
+Switzerland,Belgium,0.4,False,0.12
+Switzerland,Germany,0.4,False,0.12
+Switzerland,Singapore,1.0,False,0.11
+United Kingdom,Denmark,0.2,False,0.11
+United Kingdom,France,0.2,False,0.11
+Portugal,France,1.12,False,0.11
+Australia,United States,0.25,False,0.1
+United States,United Kingdom,1.0,False,0.1
+United Kingdom,Canada,0.5,False,0.09
+United Kingdom,Tanzania,0.25,False,0.07
+France,Belgium,0.58,False,0.05
+United Kingdom,Hungary,0.12,False,0.05
+China,Canada,0.5,False,0.05
+Portugal,Netherlands,0.5,False,0.04
+Portugal,Spain,0.5,False,0.04
+European Union,Ukraine,0.2,False,0.04
+France,Denmark,0.25,False,0.03
+France,United States,0.25,False,0.03
+China,Singapore,1.0,False,0.03
+France,Norway,0.33,False,0.02
+Latvia,Latvia,1.0,True,0.02
+Portugal,Sweden,0.12,False,0.02
+China,United States,0.5,False,0.02
+United Kingdom,Ireland,1.0,False,0.0
