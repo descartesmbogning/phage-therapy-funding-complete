@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Global phage therapy research funding, 1999–2023: analysis code"
+authors:
+  - family-names: "Mbogning Fonkou"
+    given-names: "Maxime Descartes"
+    orcid: "https://orcid.org/0000-0001-5581-3891"
+repository-code: "https://github.com/descartesmbogning/phage-therapy-funding-complete"
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-01"

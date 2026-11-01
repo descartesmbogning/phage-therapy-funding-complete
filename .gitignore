@@ -1,0 +1,32 @@
+# ---------------------------------------------------------------------------
+# Never committed: grant-level data, personal names and drafts (see data/README.md)
+# ---------------------------------------------------------------------------
+
+# Grant-level and personal data (Dimensions terms of use; researcher names with inferred gender)
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Private material kept next to the project (earlier working notebooks, manuscript text)
+private/
+
+# Manuscript text until publication (notebook 07 checks it locally)
+manuscript/*
+!manuscript/README.md
+
+# Filled-in worksheets, wherever they are saved
+*recovered_amounts*.csv
+*validation_*.xlsx
+*amount_recovery_worksheet*
+
+# Python and Jupyter
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# System
+.DS_Store
+Thumbs.db

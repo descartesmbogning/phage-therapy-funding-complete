@@ -1,0 +1,1949 @@
+{
+ "profile": "tabular-data-package",
+ "name": "phage-therapy-funding",
+ "title": "Global phage therapy research funding, 1999-2023: aggregate tables",
+ "description": "Aggregate tables behind every figure and number of the study 'Twenty-five years of phage therapy funding: rapid growth, narrow base', from 802 grants with a recorded amount in Dimensions (searched 13 February 2024). Grant-level records and researcher names are not included.",
+ "version": "1.0.0",
+ "homepage": "https://github.com/descartesmbogning/phage-therapy-funding-complete",
+ "licenses": [
+  {
+   "name": "CC-BY-4.0",
+   "path": "https://creativecommons.org/licenses/by/4.0/",
+   "title": "Creative Commons Attribution 4.0"
+  }
+ ],
+ "contributors": [
+  {
+   "title": "Maxime Descartes Mbogning Fonkou",
+   "role": "author",
+   "path": "https://orcid.org/0000-0001-5581-3891"
+  },
+  {
+   "title": "Nathan Yanwou",
+   "role": "author"
+  },
+  {
+   "title": "Roland Bamou",
+   "role": "author"
+  },
+  {
+   "title": "Idriss Tsayem N",
+   "role": "author"
+  }
+ ],
+ "keywords": [
+  "phage therapy",
+  "bacteriophage",
+  "research funding",
+  "antimicrobial resistance",
+  "global health equity",
+  "science of science"
+ ],
+ "sources": [
+  {
+   "title": "Dimensions grants database (Digital Science)",
+   "path": "https://www.dimensions.ai"
+  }
+ ],
+ "resources": [
+  {
+   "profile": "tabular-data-resource",
+   "name": "table1-by-period",
+   "path": "outputs/tables/Table1_by_period.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Grants and recorded funding by period of start year.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Period",
+      "type": "string",
+      "description": "Period of grant start years"
+     },
+     {
+      "name": "Grants",
+      "type": "integer",
+      "description": "Number of grants"
+     },
+     {
+      "name": "Total (USD M)",
+      "type": "number",
+      "description": "Recorded funding, USD million (USD million)"
+     },
+     {
+      "name": "Median (USD)",
+      "type": "number",
+      "description": "Median grant amount, USD (USD)"
+     },
+     {
+      "name": "Q1 (USD)",
+      "type": "number",
+      "description": "25th percentile of grant amounts, USD (USD)"
+     },
+     {
+      "name": "Q3 (USD)",
+      "type": "number",
+      "description": "75th percentile of grant amounts, USD (USD)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "table2a-top-funders",
+   "path": "outputs/tables/Table2a_top_funders.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Ten largest funders by recorded funding.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Funder",
+      "type": "string",
+      "description": "Funder name"
+     },
+     {
+      "name": "Country",
+      "type": "string",
+      "description": "Funder country"
+     },
+     {
+      "name": "Grants",
+      "type": "integer",
+      "description": "Number of grants"
+     },
+     {
+      "name": "Total (USD M)",
+      "type": "number",
+      "description": "Recorded funding, USD million (USD million)"
+     },
+     {
+      "name": "Share (%)",
+      "type": "number",
+      "description": "Share of all recorded funding, % (percent)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "table2b-top-recipients",
+   "path": "outputs/tables/Table2b_top_recipients.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Ten largest recipient institutions by recorded funding (fractional counting).",
+   "schema": {
+    "fields": [
+     {
+      "name": "Recipient institution",
+      "type": "string",
+      "description": "Recipient institution (country)"
+     },
+     {
+      "name": "Grants",
+      "type": "integer",
+      "description": "Number of grants"
+     },
+     {
+      "name": "Total (USD M, fractional)",
+      "type": "number",
+      "description": "Recorded funding, fractional by recipient institution, USD million (USD million)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "table3-topics",
+   "path": "outputs/tables/Table3_topics.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Grants and recorded funding by research topic (Supplementary Table S37).",
+   "schema": {
+    "fields": [
+     {
+      "name": "topic",
+      "type": "string",
+      "description": "Research topic (LDA, k = 5)"
+     },
+     {
+      "name": "Grants",
+      "type": "integer",
+      "description": "Number of grants"
+     },
+     {
+      "name": "Total (USD M)",
+      "type": "number",
+      "description": "Recorded funding, USD million (USD million)"
+     },
+     {
+      "name": "Median (USD)",
+      "type": "number",
+      "description": "Median grant amount, USD (USD)"
+     },
+     {
+      "name": "Share of funding (%)",
+      "type": "number",
+      "description": "Share of recorded funding, % (percent)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "table4-gender",
+   "path": "outputs/tables/Table4_gender.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Grants by gender composition of the research team.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Team composition",
+      "type": "string",
+      "description": "Gender composition of the named research team"
+     },
+     {
+      "name": "Grants",
+      "type": "integer",
+      "description": "Number of grants"
+     },
+     {
+      "name": "Total (USD M)",
+      "type": "number",
+      "description": "Recorded funding, USD million (USD million)"
+     },
+     {
+      "name": "Share of funding (%)",
+      "type": "number",
+      "description": "Share of recorded funding, % (percent)"
+     },
+     {
+      "name": "Mean (USD)",
+      "type": "number",
+      "description": "Mean grant amount, USD (USD)"
+     },
+     {
+      "name": "Median (USD)",
+      "type": "number",
+      "description": "Median grant amount, USD (USD)"
+     },
+     {
+      "name": "Median team size",
+      "type": "number",
+      "description": "Median number of named researchers"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "table5-income-groups",
+   "path": "outputs/tables/Table5_income_groups.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Share of recorded funding by World Bank income group (FY2024), funders and recipients (Supplementary Table S38).",
+   "schema": {
+    "fields": [
+     {
+      "name": "Unnamed: 0",
+      "type": "string",
+      "description": "Row label: World Bank income group"
+     },
+     {
+      "name": "Funders (%)",
+      "type": "number",
+      "description": "Share of recorded funding by funder country group, % (percent)"
+     },
+     {
+      "name": "Recipients, fractional (%)",
+      "type": "number",
+      "description": "Share of recorded funding by recipient country group, fractional, % (percent)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s1-missingness",
+   "path": "outputs/tables/S1_missingness.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Completeness of the analysis table (802 grants): fields present and missing.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Unnamed: 0",
+      "type": "string",
+      "description": "Row label: Field of the analysis table"
+     },
+     {
+      "name": "Present",
+      "type": "integer",
+      "description": "Grants with a value in this field"
+     },
+     {
+      "name": "Missing",
+      "type": "integer",
+      "description": "Grants without a value in this field"
+     },
+     {
+      "name": "Missing (%)",
+      "type": "number",
+      "description": "Grants without a value, % (percent)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s2-growth",
+   "path": "outputs/tables/S2_growth.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Annual growth of grants and recorded funding, 1999-2022: log-linear estimate with 95% CI, and endpoint compound annual growth rate.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Unnamed: 0",
+      "type": "string",
+      "description": "Row label: Measure (grants or funding)"
+     },
+     {
+      "name": "annual_growth_pct",
+      "type": "number",
+      "description": "Annual growth from a log-linear fit, % (percent)"
+     },
+     {
+      "name": "ci_low",
+      "type": "number",
+      "description": "Lower bound of the 95% confidence interval"
+     },
+     {
+      "name": "ci_high",
+      "type": "number",
+      "description": "Upper bound of the 95% confidence interval"
+     },
+     {
+      "name": "years",
+      "type": "string",
+      "description": "Years used for the estimate"
+     },
+     {
+      "name": "Endpoint CAGR 1999-2022 (%)",
+      "type": "number",
+      "description": "Compound annual growth between 1999 and 2022 values, % (percent)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s3-gender-tests",
+   "path": "outputs/tables/S3_gender_tests.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Grant size by team gender: Mann-Whitney tests and regression models of log(amount).",
+   "schema": {
+    "fields": [
+     {
+      "name": "Comparison",
+      "type": "string",
+      "description": "Groups compared"
+     },
+     {
+      "name": "Model",
+      "type": "string",
+      "description": "Regression model and its adjustments"
+     },
+     {
+      "name": "Mann-Whitney p",
+      "type": "number",
+      "description": "p-value of the Mann-Whitney test"
+     },
+     {
+      "name": "Adjusted difference (%)",
+      "type": "number",
+      "description": "Difference in grant size from the regression, % (percent)"
+     },
+     {
+      "name": "95% CI low (%)",
+      "type": "number",
+      "description": "Lower bound of the 95% CI, % (percent)"
+     },
+     {
+      "name": "95% CI high (%)",
+      "type": "number",
+      "description": "Upper bound of the 95% CI, % (percent)"
+     },
+     {
+      "name": "Regression p",
+      "type": "number",
+      "description": "p-value of the group coefficient"
+     },
+     {
+      "name": "N",
+      "type": "integer",
+      "description": "Number of grants or units"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s4-north-south",
+   "path": "outputs/tables/S4_north_south.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Share of recorded funding by Global North and Global South, funders and recipients.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Unnamed: 0",
+      "type": "string",
+      "description": "Row label: Global North or Global South"
+     },
+     {
+      "name": "Funders (%)",
+      "type": "number",
+      "description": "Share of recorded funding by funder country group, % (percent)"
+     },
+     {
+      "name": "Recipients, fractional (%)",
+      "type": "number",
+      "description": "Share of recorded funding by recipient country group, fractional, % (percent)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s5-countries",
+   "path": "outputs/tables/S5_countries.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Recorded funding by country, as funder country and as recipient country (fractional counting).",
+   "schema": {
+    "fields": [
+     {
+      "name": "Unnamed: 0",
+      "type": "string",
+      "description": "Row label: Country"
+     },
+     {
+      "name": "Funder (USD M)",
+      "type": "number",
+      "description": "Funding provided by funders in the country, USD million (USD million)"
+     },
+     {
+      "name": "Recipient, fractional (USD M)",
+      "type": "number",
+      "description": "Funding received by institutions in the country, fractional, USD million (USD million)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s6-funders-by-count",
+   "path": "outputs/tables/S6_funders_by_count.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Ten funders with the most grants.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Funder",
+      "type": "string",
+      "description": "Funder name"
+     },
+     {
+      "name": "Grants",
+      "type": "integer",
+      "description": "Number of grants"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s7-engagement-definitions",
+   "path": "outputs/tables/S7_engagement_definitions.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Researcher engagement labels, counting a grant in its start year only or in every year it runs.",
+   "schema": {
+    "fields": [
+     {
+      "name": "label",
+      "type": "string",
+      "description": "Engagement label"
+     },
+     {
+      "name": "Start year only (n)",
+      "type": "integer",
+      "description": "Count when a grant counts in its start year only"
+     },
+     {
+      "name": "Full grant span (n)",
+      "type": "integer",
+      "description": "Count when a grant counts in every year it runs"
+     },
+     {
+      "name": "Start year only (%)",
+      "type": "number",
+      "description": "Share when a grant counts in its start year only, % (percent)"
+     },
+     {
+      "name": "Full grant span (%)",
+      "type": "number",
+      "description": "Share when a grant counts in every year it runs, % (percent)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s8-topic-coherence",
+   "path": "outputs/tables/S8_topic_coherence.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Mean c_v topic coherence for LDA models with k = 2-12 topics.",
+   "schema": {
+    "fields": [
+     {
+      "name": "k",
+      "type": "integer",
+      "description": "Number of topics"
+     },
+     {
+      "name": "c_v",
+      "type": "number",
+      "description": "Mean c_v coherence"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s9-topic-stability",
+   "path": "outputs/tables/S9_topic_stability.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Share of grants that keep the same topic when the model is refitted with other random seeds.",
+   "schema": {
+    "fields": [
+     {
+      "name": "k",
+      "type": "integer",
+      "description": "Number of topics"
+     },
+     {
+      "name": "seed",
+      "type": "integer",
+      "description": "Random seed of the refit"
+     },
+     {
+      "name": "agreement_pct",
+      "type": "number",
+      "description": "Grants keeping the same topic, % (percent)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s10-topic-top-words",
+   "path": "outputs/tables/S10_topic_top_words.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Top 50 words of each topic in the refitted k = 5 model. Columns are refit topic numbers: refit 4, 2, 3, 1 and 0 match the paper's topics 0 (bacterial genetics), 1 (antibiotic resistance), 2 (immunotherapy), 4 (infectious disease control) and 3 (unclassified).",
+   "schema": {
+    "fields": [
+     {
+      "name": "topic_0",
+      "type": "string",
+      "description": "Top words of refit topic 0 (see table description for the match to paper topics)"
+     },
+     {
+      "name": "topic_1",
+      "type": "string",
+      "description": "Top words of refit topic 1 (see table description for the match to paper topics)"
+     },
+     {
+      "name": "topic_2",
+      "type": "string",
+      "description": "Top words of refit topic 2 (see table description for the match to paper topics)"
+     },
+     {
+      "name": "topic_3",
+      "type": "string",
+      "description": "Top words of refit topic 3 (see table description for the match to paper topics)"
+     },
+     {
+      "name": "topic_4",
+      "type": "string",
+      "description": "Top words of refit topic 4 (see table description for the match to paper topics)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s11-global-south-recipients",
+   "path": "outputs/tables/S11_global_south_recipients.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Global South recipient countries: recipient entries and recorded funding (fractional counting).",
+   "schema": {
+    "fields": [
+     {
+      "name": "country",
+      "type": "string",
+      "description": "Country"
+     },
+     {
+      "name": "Recipient entries",
+      "type": "integer",
+      "description": "Recipient institutions counted (one per grant and institution)"
+     },
+     {
+      "name": "USD (M)",
+      "type": "number",
+      "description": "Recorded funding, USD million (USD million)"
+     },
+     {
+      "name": "Share of all funding (%)",
+      "type": "number",
+      "description": "Share of all recorded funding, % (percent)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s12-domestic-vs-crossborder",
+   "path": "outputs/tables/S12_domestic_vs_crossborder.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Domestic and cross-border funding (domestic: every recipient institution in the funder's country).",
+   "schema": {
+    "fields": [
+     {
+      "name": "domestic",
+      "type": "string",
+      "description": "Domestic or cross-border"
+     },
+     {
+      "name": "Grants",
+      "type": "integer",
+      "description": "Number of grants"
+     },
+     {
+      "name": "USD (M)",
+      "type": "number",
+      "description": "Recorded funding, USD million (USD million)"
+     },
+     {
+      "name": "Share of funding (%)",
+      "type": "number",
+      "description": "Share of recorded funding, % (percent)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s13-crossborder-funders",
+   "path": "outputs/tables/S13_crossborder_funders.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Largest cross-border funders.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Funder",
+      "type": "string",
+      "description": "Funder name"
+     },
+     {
+      "name": "Cross-border grants",
+      "type": "integer",
+      "description": "Grants with at least one recipient outside the funder's country"
+     },
+     {
+      "name": "USD (M)",
+      "type": "number",
+      "description": "Recorded funding, USD million (USD million)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s14-funder-by-year",
+   "path": "outputs/tables/S14_funder_by_year.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Grants per start year for the 15 funders with the most grants.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Funder",
+      "type": "string",
+      "description": "Funder name"
+     },
+     {
+      "name": "1999",
+      "type": "integer",
+      "description": "Grants starting in 1999"
+     },
+     {
+      "name": "2000",
+      "type": "integer",
+      "description": "Grants starting in 2000"
+     },
+     {
+      "name": "2001",
+      "type": "integer",
+      "description": "Grants starting in 2001"
+     },
+     {
+      "name": "2002",
+      "type": "integer",
+      "description": "Grants starting in 2002"
+     },
+     {
+      "name": "2003",
+      "type": "integer",
+      "description": "Grants starting in 2003"
+     },
+     {
+      "name": "2004",
+      "type": "integer",
+      "description": "Grants starting in 2004"
+     },
+     {
+      "name": "2005",
+      "type": "integer",
+      "description": "Grants starting in 2005"
+     },
+     {
+      "name": "2006",
+      "type": "integer",
+      "description": "Grants starting in 2006"
+     },
+     {
+      "name": "2007",
+      "type": "integer",
+      "description": "Grants starting in 2007"
+     },
+     {
+      "name": "2008",
+      "type": "integer",
+      "description": "Grants starting in 2008"
+     },
+     {
+      "name": "2009",
+      "type": "integer",
+      "description": "Grants starting in 2009"
+     },
+     {
+      "name": "2010",
+      "type": "integer",
+      "description": "Grants starting in 2010"
+     },
+     {
+      "name": "2011",
+      "type": "integer",
+      "description": "Grants starting in 2011"
+     },
+     {
+      "name": "2012",
+      "type": "integer",
+      "description": "Grants starting in 2012"
+     },
+     {
+      "name": "2013",
+      "type": "integer",
+      "description": "Grants starting in 2013"
+     },
+     {
+      "name": "2014",
+      "type": "integer",
+      "description": "Grants starting in 2014"
+     },
+     {
+      "name": "2015",
+      "type": "integer",
+      "description": "Grants starting in 2015"
+     },
+     {
+      "name": "2016",
+      "type": "integer",
+      "description": "Grants starting in 2016"
+     },
+     {
+      "name": "2017",
+      "type": "integer",
+      "description": "Grants starting in 2017"
+     },
+     {
+      "name": "2018",
+      "type": "integer",
+      "description": "Grants starting in 2018"
+     },
+     {
+      "name": "2019",
+      "type": "integer",
+      "description": "Grants starting in 2019"
+     },
+     {
+      "name": "2020",
+      "type": "integer",
+      "description": "Grants starting in 2020"
+     },
+     {
+      "name": "2021",
+      "type": "integer",
+      "description": "Grants starting in 2021"
+     },
+     {
+      "name": "2022",
+      "type": "integer",
+      "description": "Grants starting in 2022"
+     },
+     {
+      "name": "2023",
+      "type": "integer",
+      "description": "Grants starting in 2023"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s15-topic-share-by-funder",
+   "path": "outputs/tables/S15_topic_share_by_funder.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Topic shares (% of each funder's grants) for the 15 funders with the most grants.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Funder",
+      "type": "string",
+      "description": "Funder name"
+     },
+     {
+      "name": "Infectious disease control",
+      "type": "number",
+      "description": "% of the funder's grants in 'Infectious disease control'"
+     },
+     {
+      "name": "Bacterial genetics and mechanisms",
+      "type": "number",
+      "description": "% of the funder's grants in 'Bacterial genetics and mechanisms'"
+     },
+     {
+      "name": "Antibiotic resistance strategies",
+      "type": "number",
+      "description": "% of the funder's grants in 'Antibiotic resistance strategies'"
+     },
+     {
+      "name": "Immunotherapy and targeted treatments",
+      "type": "number",
+      "description": "% of the funder's grants in 'Immunotherapy and targeted treatments'"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s16-topic-share-by-recipient",
+   "path": "outputs/tables/S16_topic_share_by_recipient.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Topic shares (% of each country's grants) for the 15 largest recipient countries.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Unnamed: 0",
+      "type": "string",
+      "description": "Row label: Recipient country"
+     },
+     {
+      "name": "Infectious disease control",
+      "type": "number",
+      "description": "% of the country's grants in 'Infectious disease control'"
+     },
+     {
+      "name": "Bacterial genetics and mechanisms",
+      "type": "number",
+      "description": "% of the country's grants in 'Bacterial genetics and mechanisms'"
+     },
+     {
+      "name": "Antibiotic resistance strategies",
+      "type": "number",
+      "description": "% of the country's grants in 'Antibiotic resistance strategies'"
+     },
+     {
+      "name": "Immunotherapy and targeted treatments",
+      "type": "number",
+      "description": "% of the country's grants in 'Immunotherapy and targeted treatments'"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s17-topic-distinctive-words",
+   "path": "outputs/tables/S17_topic_distinctive_words.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Most distinctive words of each topic, ranked.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Infectious disease control",
+      "type": "string",
+      "description": "Distinctive words of 'Infectious disease control', ranked"
+     },
+     {
+      "name": "Bacterial genetics and mechanisms",
+      "type": "string",
+      "description": "Distinctive words of 'Bacterial genetics and mechanisms', ranked"
+     },
+     {
+      "name": "Antibiotic resistance strategies",
+      "type": "string",
+      "description": "Distinctive words of 'Antibiotic resistance strategies', ranked"
+     },
+     {
+      "name": "Immunotherapy and targeted treatments",
+      "type": "string",
+      "description": "Distinctive words of 'Immunotherapy and targeted treatments', ranked"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s18-topic-jaccard",
+   "path": "outputs/tables/S18_topic_jaccard.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Jaccard similarity between the top-word sets of the topics.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Unnamed: 0",
+      "type": "string",
+      "description": "Row label: Topic"
+     },
+     {
+      "name": "Infectious disease control",
+      "type": "number",
+      "description": "Jaccard similarity with 'Infectious disease control'"
+     },
+     {
+      "name": "Bacterial genetics and mechanisms",
+      "type": "number",
+      "description": "Jaccard similarity with 'Bacterial genetics and mechanisms'"
+     },
+     {
+      "name": "Antibiotic resistance strategies",
+      "type": "number",
+      "description": "Jaccard similarity with 'Antibiotic resistance strategies'"
+     },
+     {
+      "name": "Immunotherapy and targeted treatments",
+      "type": "number",
+      "description": "Jaccard similarity with 'Immunotherapy and targeted treatments'"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s19-researchers-by-gender-year",
+   "path": "outputs/tables/S19_researchers_by_gender_year.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Named researchers by inferred gender and start year.",
+   "schema": {
+    "fields": [
+     {
+      "name": "year",
+      "type": "integer",
+      "description": "Grant start year"
+     },
+     {
+      "name": "Male",
+      "type": "integer",
+      "description": "Named researchers inferred as men"
+     },
+     {
+      "name": "Female",
+      "type": "integer",
+      "description": "Named researchers inferred as women"
+     },
+     {
+      "name": "Unknown",
+      "type": "integer",
+      "description": "Named researchers whose gender could not be inferred"
+     },
+     {
+      "name": "Female share (%)",
+      "type": "number",
+      "description": "Women among named researchers with inferred gender, % (percent)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s20-team-gender-by-topic",
+   "path": "outputs/tables/S20_team_gender_by_topic.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Team gender composition by topic, % of grants.",
+   "schema": {
+    "fields": [
+     {
+      "name": "topic",
+      "type": "string",
+      "description": "Research topic (LDA, k = 5)"
+     },
+     {
+      "name": "Male only",
+      "type": "number",
+      "description": "Grants with only men named, %"
+     },
+     {
+      "name": "Mixed",
+      "type": "number",
+      "description": "Grants with women and men named, %"
+     },
+     {
+      "name": "Female only",
+      "type": "number",
+      "description": "Grants with only women named, %"
+     },
+     {
+      "name": "Gender unknown",
+      "type": "number",
+      "description": "Grants with no researcher of known gender, %"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s21-researcher-engagement-by-year",
+   "path": "outputs/tables/S21_researcher_engagement_by_year.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Researcher engagement labels by year.",
+   "schema": {
+    "fields": [
+     {
+      "name": "group",
+      "type": "string",
+      "description": "Group of researchers"
+     },
+     {
+      "name": "year",
+      "type": "integer",
+      "description": "Grant start year"
+     },
+     {
+      "name": "Continuant",
+      "type": "integer",
+      "description": "Entities active before and after this year"
+     },
+     {
+      "name": "Newcomer",
+      "type": "integer",
+      "description": "Entities active for the first time"
+     },
+     {
+      "name": "Terminator",
+      "type": "integer",
+      "description": "Entities active before but not after"
+     },
+     {
+      "name": "Transient",
+      "type": "integer",
+      "description": "Entities active in one year only"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s22-institution-engagement-by-topic",
+   "path": "outputs/tables/S22_institution_engagement_by_topic.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Institution engagement labels by topic and year.",
+   "schema": {
+    "fields": [
+     {
+      "name": "topic",
+      "type": "string",
+      "description": "Research topic (LDA, k = 5)"
+     },
+     {
+      "name": "year",
+      "type": "integer",
+      "description": "Grant start year"
+     },
+     {
+      "name": "Continuant",
+      "type": "integer",
+      "description": "Entities active before and after this year"
+     },
+     {
+      "name": "Newcomer",
+      "type": "integer",
+      "description": "Entities active for the first time"
+     },
+     {
+      "name": "Terminator",
+      "type": "integer",
+      "description": "Entities active before but not after"
+     },
+     {
+      "name": "Transient",
+      "type": "integer",
+      "description": "Entities active in one year only"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s23-country-flows",
+   "path": "outputs/tables/S23_country_flows.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Grants and recorded funding from funder country to recipient country (fractional counting).",
+   "schema": {
+    "fields": [
+     {
+      "name": "Funder Country",
+      "type": "string",
+      "description": "Funder country"
+     },
+     {
+      "name": "Recipient country",
+      "type": "string",
+      "description": "Recipient country"
+     },
+     {
+      "name": "Grants (fractional)",
+      "type": "number",
+      "description": "Grants, fractional by recipient institution"
+     },
+     {
+      "name": "Domestic",
+      "type": "boolean",
+      "description": "True when funder and recipient country are the same"
+     },
+     {
+      "name": "USD (M, fractional)",
+      "type": "number",
+      "description": "Recorded funding, fractional by recipient institution, USD million"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s24-concentration",
+   "path": "outputs/tables/S24_concentration.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Concentration of recorded funding: HHI (0-10,000), Gini and top 10% share.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Unit",
+      "type": "string",
+      "description": "Unit of analysis"
+     },
+     {
+      "name": "N",
+      "type": "integer",
+      "description": "Number of grants or units"
+     },
+     {
+      "name": "HHI (0-10,000)",
+      "type": "number",
+      "description": "Herfindahl-Hirschman index (0-10,000) (index, 0-10,000)"
+     },
+     {
+      "name": "Gini",
+      "type": "number",
+      "description": "Gini coefficient (0 = equal, 1 = all to one unit)"
+     },
+     {
+      "name": "Top 10% share (%)",
+      "type": "number",
+      "description": "Share received by the top 10% of units, % (percent)"
+     },
+     {
+      "name": "Largest unit",
+      "type": "string",
+      "description": "Unit with the largest share"
+     },
+     {
+      "name": "Largest share (%)",
+      "type": "number",
+      "description": "Share of the largest unit, % (percent)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s25-shares-by-period",
+   "path": "outputs/tables/S25_shares_by_period.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Shares of recorded funding from US funders and NIAID, and funder HHI, by period.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Period",
+      "type": "string",
+      "description": "Period of grant start years"
+     },
+     {
+      "name": "Grants",
+      "type": "integer",
+      "description": "Number of grants"
+     },
+     {
+      "name": "Total (USD M)",
+      "type": "number",
+      "description": "Recorded funding, USD million (USD million)"
+     },
+     {
+      "name": "US funders (%)",
+      "type": "number",
+      "description": "Share from US funders, % (percent)"
+     },
+     {
+      "name": "NIAID (%)",
+      "type": "number",
+      "description": "Share from NIAID, % (percent)"
+     },
+     {
+      "name": "Funder HHI",
+      "type": "number",
+      "description": "HHI across funders (0-10,000) (index, 0-10,000)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s26-collaboration",
+   "path": "outputs/tables/S26_collaboration.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Collaboration counts: grants with several recipient institutions or countries, and North-South grants.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Measure",
+      "type": "string",
+      "description": "Measure"
+     },
+     {
+      "name": "Count",
+      "type": "integer",
+      "description": "Number of grants or pairs"
+     },
+     {
+      "name": "Share of grants (%)",
+      "type": "number",
+      "description": "Share of the 802 grants, % (percent)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s27-without-niaid",
+   "path": "outputs/tables/S27_without_niaid.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Growth, US share and concentration with and without NIAID grants.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Sample",
+      "type": "string",
+      "description": "Grants included"
+     },
+     {
+      "name": "Grants",
+      "type": "integer",
+      "description": "Number of grants"
+     },
+     {
+      "name": "Total (USD M)",
+      "type": "number",
+      "description": "Recorded funding, USD million (USD million)"
+     },
+     {
+      "name": "Grant growth (%/yr)",
+      "type": "number",
+      "description": "Annual growth in grants, % (percent)"
+     },
+     {
+      "name": "Grant growth CI",
+      "type": "string",
+      "description": "95% CI of grant growth"
+     },
+     {
+      "name": "Funding growth (%/yr)",
+      "type": "number",
+      "description": "Annual growth in recorded funding, % (percent)"
+     },
+     {
+      "name": "Funding growth CI",
+      "type": "string",
+      "description": "95% CI of funding growth"
+     },
+     {
+      "name": "US funders (%)",
+      "type": "number",
+      "description": "Share from US funders, % (percent)"
+     },
+     {
+      "name": "Funder HHI",
+      "type": "number",
+      "description": "HHI across funders (0-10,000) (index, 0-10,000)"
+     },
+     {
+      "name": "Funder-country HHI",
+      "type": "number",
+      "description": "HHI across funder countries (0-10,000) (index, 0-10,000)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s28-real-growth",
+   "path": "outputs/tables/S28_real_growth.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Annual growth of recorded funding in nominal and constant 2023 US dollars (CPI-U).",
+   "schema": {
+    "fields": [
+     {
+      "name": "Unnamed: 0",
+      "type": "string",
+      "description": "Row label: Dollar basis (nominal or constant 2023 USD)"
+     },
+     {
+      "name": "annual_growth_pct",
+      "type": "number",
+      "description": "Annual growth from a log-linear fit, % (percent)"
+     },
+     {
+      "name": "ci_low",
+      "type": "number",
+      "description": "Lower bound of the 95% confidence interval"
+     },
+     {
+      "name": "ci_high",
+      "type": "number",
+      "description": "Upper bound of the 95% confidence interval"
+     },
+     {
+      "name": "years",
+      "type": "string",
+      "description": "Years used for the estimate"
+     },
+     {
+      "name": "Total (USD M)",
+      "type": "number",
+      "description": "Recorded funding, USD million (USD million)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s29-screening-flow",
+   "path": "outputs/tables/S29_screening_flow.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Screening flow from the Dimensions export to the analysed grants.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Step",
+      "type": "string",
+      "description": "Screening step"
+     },
+     {
+      "name": "Records",
+      "type": "integer",
+      "description": "Records left after the step"
+     },
+     {
+      "name": "Note",
+      "type": "string",
+      "description": "Note"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s30-award-types",
+   "path": "outputs/tables/S30_award_types.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Award types among relevant grants with and without a recorded amount.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Award type",
+      "type": "string",
+      "description": "Award type (research grant, training award, capacity funding)"
+     },
+     {
+      "name": "With an amount (n)",
+      "type": "integer",
+      "description": "Relevant grants with a recorded amount"
+     },
+     {
+      "name": "Without an amount (n)",
+      "type": "integer",
+      "description": "Relevant grants without an amount"
+     },
+     {
+      "name": "With an amount (%)",
+      "type": "number",
+      "description": "Share of grants with an amount, % (percent)"
+     },
+     {
+      "name": "Without an amount (%)",
+      "type": "number",
+      "description": "Share of grants without an amount, % (percent)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s31-count-based-shares",
+   "path": "outputs/tables/S31_count_based_shares.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Count-based shares (% of grants) with and without the 272 grants that have no amount.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Measure (share of grants)",
+      "type": "string",
+      "description": "Measure, as % of grants"
+     },
+     {
+      "name": "With an amount",
+      "type": "number",
+      "description": "Among the 802 grants with an amount"
+     },
+     {
+      "name": "Without an amount",
+      "type": "number",
+      "description": "Among the 272 grants without an amount"
+     },
+     {
+      "name": "All relevant grants",
+      "type": "number",
+      "description": "Among all 1,074 relevant grants"
+     },
+     {
+      "name": "All, without training awards",
+      "type": "number",
+      "description": "Among relevant grants, training awards excluded"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s32-imputed-amount-scenarios",
+   "path": "outputs/tables/S32_imputed_amount_scenarios.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Shares of funding with imputed amounts for grants without an amount.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Measure",
+      "type": "string",
+      "description": "Measure"
+     },
+     {
+      "name": "Recorded amounts only (main analysis)",
+      "type": "number",
+      "description": "Value in the main analysis"
+     },
+     {
+      "name": "Imputed, low (25th percentile)",
+      "type": "number",
+      "description": "Value with missing amounts imputed at the 25th percentile"
+     },
+     {
+      "name": "Imputed, central (median)",
+      "type": "number",
+      "description": "Value with missing amounts imputed at the median"
+     },
+     {
+      "name": "Imputed, high (75th percentile)",
+      "type": "number",
+      "description": "Value with missing amounts imputed at the 75th percentile"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s33-projects",
+   "path": "outputs/tables/S33_projects.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Yearly grant records merged into projects.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Measure",
+      "type": "string",
+      "description": "Measure"
+     },
+     {
+      "name": "Grant records",
+      "type": "number",
+      "description": "Yearly grant records"
+     },
+     {
+      "name": "Projects",
+      "type": "number",
+      "description": "Projects after merging yearly records"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s34-gender-subsets",
+   "path": "outputs/tables/S34_gender_subsets.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Female-only vs male-only grant size gap in subsets of grants.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Subset",
+      "type": "string",
+      "description": "Subset of grants"
+     },
+     {
+      "name": "Grants in model",
+      "type": "integer",
+      "description": "Grants included in the regression"
+     },
+     {
+      "name": "Female-only vs male-only (%)",
+      "type": "number",
+      "description": "Adjusted difference in grant size, female-only vs male-only teams, % (percent)"
+     },
+     {
+      "name": "95% CI low (%)",
+      "type": "number",
+      "description": "Lower bound of the 95% CI, % (percent)"
+     },
+     {
+      "name": "95% CI high (%)",
+      "type": "number",
+      "description": "Upper bound of the 95% CI, % (percent)"
+     },
+     {
+      "name": "p",
+      "type": "number",
+      "description": "p-value"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s35-topic-probability-shares",
+   "path": "outputs/tables/S35_topic_probability_shares.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Topic shares of funding from the stored assignment, the refitted model, and split by topic probability.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Topic",
+      "type": "string",
+      "description": "Research topic"
+     },
+     {
+      "name": "One topic per grant, paper assignment (%)",
+      "type": "number",
+      "description": "Share of funding, one topic per grant, stored assignment, % (percent)"
+     },
+     {
+      "name": "One topic per grant, refit (%)",
+      "type": "number",
+      "description": "Share of funding, one topic per grant, refitted model, % (percent)"
+     },
+     {
+      "name": "Split by topic probability, refit (%)",
+      "type": "number",
+      "description": "Share of funding split by topic probability, refitted model, % (percent)"
+     },
+     {
+      "name": "1999-2005, paper assignment (%)",
+      "type": "number",
+      "description": "Share in 1999-2005, stored assignment, % (percent)"
+     },
+     {
+      "name": "1999-2005, split, refit (%)",
+      "type": "number",
+      "description": "Share in 1999-2005, split by probability, % (percent)"
+     },
+     {
+      "name": "2016-2023, paper assignment (%)",
+      "type": "number",
+      "description": "Share in 2016-2023, stored assignment, % (percent)"
+     },
+     {
+      "name": "2016-2023, split, refit (%)",
+      "type": "number",
+      "description": "Share in 2016-2023, split by probability, % (percent)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "s36-robustness-summary",
+   "path": "outputs/tables/S36_robustness_summary.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Headline results under each sensitivity check.",
+   "schema": {
+    "fields": [
+     {
+      "name": "Check",
+      "type": "string",
+      "description": "Sensitivity check"
+     },
+     {
+      "name": "Funding growth (%/yr)",
+      "type": "string",
+      "description": "Annual growth in recorded funding, % (percent)"
+     },
+     {
+      "name": "Global South recipients (% of funding)",
+      "type": "string",
+      "description": "Share received by the Global South, % (percent)"
+     },
+     {
+      "name": "Low + lower-middle income recipients (%)",
+      "type": "string",
+      "description": "Share received by low- and lower-middle-income countries, % (percent)"
+     },
+     {
+      "name": "US funders (% of funding)",
+      "type": "string",
+      "description": "Share from US funders, % (percent)"
+     },
+     {
+      "name": "NIAID (% of funding)",
+      "type": "string",
+      "description": "Share from NIAID, % (percent)"
+     },
+     {
+      "name": "Female-only grant gap (%)",
+      "type": "string",
+      "description": "Adjusted female-only vs male-only grant size gap, % (percent)"
+     },
+     {
+      "name": "One-year-only researchers (%)",
+      "type": "string",
+      "description": "Researchers active in a single year, % (percent)"
+     },
+     {
+      "name": "Rise in antibiotic-resistance share, 1999-2005 to 2016-2023 (points)",
+      "type": "string",
+      "description": "Change in the antibiotic-resistance topic share, percentage points (percentage points)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "paper-numbers",
+   "path": "outputs/tables/paper_numbers.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Every number quoted in the paper: section, claim, value as printed and source.",
+   "schema": {
+    "fields": [
+     {
+      "name": "section",
+      "type": "string",
+      "description": "Section of the paper"
+     },
+     {
+      "name": "claim",
+      "type": "string",
+      "description": "What the number measures"
+     },
+     {
+      "name": "value",
+      "type": "string",
+      "description": "Value as printed in the paper"
+     },
+     {
+      "name": "source",
+      "type": "string",
+      "description": "Table, figure or code that produces it"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "cube",
+   "path": "outputs/explorer/cube.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Explorer data cube: grants and recorded funding by year, funder country, funder, recipient country, income group and topic (fractional counting).",
+   "schema": {
+    "fields": [
+     {
+      "name": "year",
+      "type": "integer",
+      "description": "Grant start year"
+     },
+     {
+      "name": "funder_country",
+      "type": "string",
+      "description": "Country of the funder"
+     },
+     {
+      "name": "funder",
+      "type": "string",
+      "description": "Funder name"
+     },
+     {
+      "name": "recipient_country",
+      "type": "string",
+      "description": "Country of the recipient institution"
+     },
+     {
+      "name": "recipient_income",
+      "type": "string",
+      "description": "World Bank income group (FY2024) of the recipient country"
+     },
+     {
+      "name": "topic",
+      "type": "string",
+      "description": "Research topic (LDA, k = 5)"
+     },
+     {
+      "name": "grants",
+      "type": "number",
+      "description": "Grants (fractional: a grant shared by k institutions counts 1/k for each)"
+     },
+     {
+      "name": "usd",
+      "type": "number",
+      "description": "Recorded funding, nominal US dollars as converted by Dimensions (fractional) (USD)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "country-classification",
+   "path": "data/reference/country_classification.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Country to World Bank income group (FY2024), Global North/South and OECD DAC ODA-recipient status.",
+   "schema": {
+    "fields": [
+     {
+      "name": "country",
+      "type": "string",
+      "description": "Country"
+     },
+     {
+      "name": "north_south",
+      "type": "string",
+      "description": "Global North or Global South"
+     },
+     {
+      "name": "income_group",
+      "type": "string",
+      "description": "World Bank income group (FY2024)"
+     },
+     {
+      "name": "note",
+      "type": "string",
+      "description": "Note on the classification"
+     },
+     {
+      "name": "source",
+      "type": "string",
+      "description": "Table, figure or code that produces it"
+     },
+     {
+      "name": "oecd_dac_2024",
+      "type": "string",
+      "description": "OECD DAC ODA-recipient status (2024-25)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "cpi-u-annual",
+   "path": "data/reference/cpi_u_annual.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Annual average US consumer price index (CPI-U), 1999-2023, used for constant-dollar growth.",
+   "schema": {
+    "fields": [
+     {
+      "name": "year",
+      "type": "integer",
+      "description": "Grant start year"
+     },
+     {
+      "name": "cpi_u_annual_avg",
+      "type": "number",
+      "description": "Annual average CPI-U (1982-84 = 100)"
+     },
+     {
+      "name": "source",
+      "type": "string",
+      "description": "Table, figure or code that produces it"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "nih-reporter-crosscheck",
+   "path": "data/reference/nih_reporter_crosscheck.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Yearly NIH totals in this dataset, with an empty column for the same search in NIH RePORTER.",
+   "schema": {
+    "fields": [
+     {
+      "name": "year",
+      "type": "integer",
+      "description": "Grant start year"
+     },
+     {
+      "name": "this_dataset_usd_m",
+      "type": "number",
+      "description": "NIH funding in this dataset, USD million"
+     },
+     {
+      "name": "reporter_usd_m",
+      "type": "number",
+      "description": "Same search in NIH RePORTER, USD million (to fill)"
+     }
+    ]
+   }
+  },
+  {
+   "profile": "tabular-data-resource",
+   "name": "ppp-price-level-2023",
+   "path": "data/reference/ppp_price_level_2023.csv",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "description": "Recipient countries, with an empty column for the World Bank price level ratio (PA.NUS.PPPC.RF).",
+   "schema": {
+    "fields": [
+     {
+      "name": "country",
+      "type": "string",
+      "description": "Country"
+     },
+     {
+      "name": "price_level_ratio_2023",
+      "type": "number",
+      "description": "World Bank price level ratio, 2023 (to fill)"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+Check,Funding growth (%/yr),Global South recipients (% of funding),Low + lower-middle income recipients (%),US funders (% of funding),NIAID (% of funding),Female-only grant gap (%),One-year-only researchers (%),"Rise in antibiotic-resistance share, 1999-2005 to 2016-2023 (points)"
+Main analysis,16.6,2.1,0.33,47.7,21.0,-18.73,82.1,22.9
+"Missing amounts: imputed, low (25th percentile)",16.3,2.64,0.55,47.4,20.15,,,
+"Missing amounts: imputed, central (median)",16.0,3.8,0.54,45.11,18.9,,,
+"Missing amounts: imputed, high (75th percentile)",16.1,5.49,0.52,41.39,16.71,,,
+"Count of grants instead of dollars (all 1,074)",,17.5,1.4,,,,,
+Projects instead of records,,,,,,,82.9,
+Full-span engagement rule,,,,,,,3.5,
+Researchers first seen 2001-2019,,,,,,,83.31,
+Researchers who held only one grant,,,,,,,83.9,
+Amounts spread over grant years,17.1,,,,,,,
+Income group at grant start,,,0.46,,,,,
+OECD DAC list instead of Global South,,2.17,,,,,,
+Constant 2023 dollars,14.1,,,,,,,
+Without NIAID,16.2,,,33.8,,,,
+Gender: without funders in Japan and China,,,,,,-20.86,,
+Gender: without training awards,,,,,,-20.22,,
+Gender: amount per year,,,,,,-21.65,,
+Gender: simple model,,,,,,-27.28,,
+"Topics: refit model, split by probability",,,,,,,,32.5
+Conclusion holds if,> 10,< 10,< 1,"> 30, largest country","> 15, largest funder",< 0,> 50,> 10

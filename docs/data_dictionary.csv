@@ -1,0 +1,256 @@
+file,table_description,column,type,unit,description
+outputs/tables/Table1_by_period.csv,Grants and recorded funding by period of start year.,Period,string,,Period of grant start years
+outputs/tables/Table1_by_period.csv,Grants and recorded funding by period of start year.,Grants,integer,,Number of grants
+outputs/tables/Table1_by_period.csv,Grants and recorded funding by period of start year.,Total (USD M),number,USD million,"Recorded funding, USD million"
+outputs/tables/Table1_by_period.csv,Grants and recorded funding by period of start year.,Median (USD),number,USD,"Median grant amount, USD"
+outputs/tables/Table1_by_period.csv,Grants and recorded funding by period of start year.,Q1 (USD),number,USD,"25th percentile of grant amounts, USD"
+outputs/tables/Table1_by_period.csv,Grants and recorded funding by period of start year.,Q3 (USD),number,USD,"75th percentile of grant amounts, USD"
+outputs/tables/Table2a_top_funders.csv,Ten largest funders by recorded funding.,Funder,string,,Funder name
+outputs/tables/Table2a_top_funders.csv,Ten largest funders by recorded funding.,Country,string,,Funder country
+outputs/tables/Table2a_top_funders.csv,Ten largest funders by recorded funding.,Grants,integer,,Number of grants
+outputs/tables/Table2a_top_funders.csv,Ten largest funders by recorded funding.,Total (USD M),number,USD million,"Recorded funding, USD million"
+outputs/tables/Table2a_top_funders.csv,Ten largest funders by recorded funding.,Share (%),number,percent,"Share of all recorded funding, %"
+outputs/tables/Table2b_top_recipients.csv,Ten largest recipient institutions by recorded funding (fractional counting).,Recipient institution,string,,Recipient institution (country)
+outputs/tables/Table2b_top_recipients.csv,Ten largest recipient institutions by recorded funding (fractional counting).,Grants,integer,,Number of grants
+outputs/tables/Table2b_top_recipients.csv,Ten largest recipient institutions by recorded funding (fractional counting).,"Total (USD M, fractional)",number,USD million,"Recorded funding, fractional by recipient institution, USD million"
+outputs/tables/Table3_topics.csv,Grants and recorded funding by research topic (Supplementary Table S37).,topic,string,,"Research topic (LDA, k = 5)"
+outputs/tables/Table3_topics.csv,Grants and recorded funding by research topic (Supplementary Table S37).,Grants,integer,,Number of grants
+outputs/tables/Table3_topics.csv,Grants and recorded funding by research topic (Supplementary Table S37).,Total (USD M),number,USD million,"Recorded funding, USD million"
+outputs/tables/Table3_topics.csv,Grants and recorded funding by research topic (Supplementary Table S37).,Median (USD),number,USD,"Median grant amount, USD"
+outputs/tables/Table3_topics.csv,Grants and recorded funding by research topic (Supplementary Table S37).,Share of funding (%),number,percent,"Share of recorded funding, %"
+outputs/tables/Table4_gender.csv,Grants by gender composition of the research team.,Team composition,string,,Gender composition of the named research team
+outputs/tables/Table4_gender.csv,Grants by gender composition of the research team.,Grants,integer,,Number of grants
+outputs/tables/Table4_gender.csv,Grants by gender composition of the research team.,Total (USD M),number,USD million,"Recorded funding, USD million"
+outputs/tables/Table4_gender.csv,Grants by gender composition of the research team.,Share of funding (%),number,percent,"Share of recorded funding, %"
+outputs/tables/Table4_gender.csv,Grants by gender composition of the research team.,Mean (USD),number,USD,"Mean grant amount, USD"
+outputs/tables/Table4_gender.csv,Grants by gender composition of the research team.,Median (USD),number,USD,"Median grant amount, USD"
+outputs/tables/Table4_gender.csv,Grants by gender composition of the research team.,Median team size,number,,Median number of named researchers
+outputs/tables/Table5_income_groups.csv,"Share of recorded funding by World Bank income group (FY2024), funders and recipients (Supplementary Table S38).",Unnamed: 0,string,,Row label: World Bank income group
+outputs/tables/Table5_income_groups.csv,"Share of recorded funding by World Bank income group (FY2024), funders and recipients (Supplementary Table S38).",Funders (%),number,percent,"Share of recorded funding by funder country group, %"
+outputs/tables/Table5_income_groups.csv,"Share of recorded funding by World Bank income group (FY2024), funders and recipients (Supplementary Table S38).","Recipients, fractional (%)",number,percent,"Share of recorded funding by recipient country group, fractional, %"
+outputs/tables/S1_missingness.csv,Completeness of the analysis table (802 grants): fields present and missing.,Unnamed: 0,string,,Row label: Field of the analysis table
+outputs/tables/S1_missingness.csv,Completeness of the analysis table (802 grants): fields present and missing.,Present,integer,,Grants with a value in this field
+outputs/tables/S1_missingness.csv,Completeness of the analysis table (802 grants): fields present and missing.,Missing,integer,,Grants without a value in this field
+outputs/tables/S1_missingness.csv,Completeness of the analysis table (802 grants): fields present and missing.,Missing (%),number,percent,"Grants without a value, %"
+outputs/tables/S2_growth.csv,"Annual growth of grants and recorded funding, 1999-2022: log-linear estimate with 95% CI, and endpoint compound annual growth rate.",Unnamed: 0,string,,Row label: Measure (grants or funding)
+outputs/tables/S2_growth.csv,"Annual growth of grants and recorded funding, 1999-2022: log-linear estimate with 95% CI, and endpoint compound annual growth rate.",annual_growth_pct,number,percent,"Annual growth from a log-linear fit, %"
+outputs/tables/S2_growth.csv,"Annual growth of grants and recorded funding, 1999-2022: log-linear estimate with 95% CI, and endpoint compound annual growth rate.",ci_low,number,,Lower bound of the 95% confidence interval
+outputs/tables/S2_growth.csv,"Annual growth of grants and recorded funding, 1999-2022: log-linear estimate with 95% CI, and endpoint compound annual growth rate.",ci_high,number,,Upper bound of the 95% confidence interval
+outputs/tables/S2_growth.csv,"Annual growth of grants and recorded funding, 1999-2022: log-linear estimate with 95% CI, and endpoint compound annual growth rate.",years,string,,Years used for the estimate
+outputs/tables/S2_growth.csv,"Annual growth of grants and recorded funding, 1999-2022: log-linear estimate with 95% CI, and endpoint compound annual growth rate.",Endpoint CAGR 1999-2022 (%),number,percent,"Compound annual growth between 1999 and 2022 values, %"
+outputs/tables/S3_gender_tests.csv,Grant size by team gender: Mann-Whitney tests and regression models of log(amount).,Comparison,string,,Groups compared
+outputs/tables/S3_gender_tests.csv,Grant size by team gender: Mann-Whitney tests and regression models of log(amount).,Model,string,,Regression model and its adjustments
+outputs/tables/S3_gender_tests.csv,Grant size by team gender: Mann-Whitney tests and regression models of log(amount).,Mann-Whitney p,number,,p-value of the Mann-Whitney test
+outputs/tables/S3_gender_tests.csv,Grant size by team gender: Mann-Whitney tests and regression models of log(amount).,Adjusted difference (%),number,percent,"Difference in grant size from the regression, %"
+outputs/tables/S3_gender_tests.csv,Grant size by team gender: Mann-Whitney tests and regression models of log(amount).,95% CI low (%),number,percent,"Lower bound of the 95% CI, %"
+outputs/tables/S3_gender_tests.csv,Grant size by team gender: Mann-Whitney tests and regression models of log(amount).,95% CI high (%),number,percent,"Upper bound of the 95% CI, %"
+outputs/tables/S3_gender_tests.csv,Grant size by team gender: Mann-Whitney tests and regression models of log(amount).,Regression p,number,,p-value of the group coefficient
+outputs/tables/S3_gender_tests.csv,Grant size by team gender: Mann-Whitney tests and regression models of log(amount).,N,integer,,Number of grants or units
+outputs/tables/S4_north_south.csv,"Share of recorded funding by Global North and Global South, funders and recipients.",Unnamed: 0,string,,Row label: Global North or Global South
+outputs/tables/S4_north_south.csv,"Share of recorded funding by Global North and Global South, funders and recipients.",Funders (%),number,percent,"Share of recorded funding by funder country group, %"
+outputs/tables/S4_north_south.csv,"Share of recorded funding by Global North and Global South, funders and recipients.","Recipients, fractional (%)",number,percent,"Share of recorded funding by recipient country group, fractional, %"
+outputs/tables/S5_countries.csv,"Recorded funding by country, as funder country and as recipient country (fractional counting).",Unnamed: 0,string,,Row label: Country
+outputs/tables/S5_countries.csv,"Recorded funding by country, as funder country and as recipient country (fractional counting).",Funder (USD M),number,USD million,"Funding provided by funders in the country, USD million"
+outputs/tables/S5_countries.csv,"Recorded funding by country, as funder country and as recipient country (fractional counting).","Recipient, fractional (USD M)",number,USD million,"Funding received by institutions in the country, fractional, USD million"
+outputs/tables/S6_funders_by_count.csv,Ten funders with the most grants.,Funder,string,,Funder name
+outputs/tables/S6_funders_by_count.csv,Ten funders with the most grants.,Grants,integer,,Number of grants
+outputs/tables/S7_engagement_definitions.csv,"Researcher engagement labels, counting a grant in its start year only or in every year it runs.",label,string,,Engagement label
+outputs/tables/S7_engagement_definitions.csv,"Researcher engagement labels, counting a grant in its start year only or in every year it runs.",Start year only (n),integer,,Count when a grant counts in its start year only
+outputs/tables/S7_engagement_definitions.csv,"Researcher engagement labels, counting a grant in its start year only or in every year it runs.",Full grant span (n),integer,,Count when a grant counts in every year it runs
+outputs/tables/S7_engagement_definitions.csv,"Researcher engagement labels, counting a grant in its start year only or in every year it runs.",Start year only (%),number,percent,"Share when a grant counts in its start year only, %"
+outputs/tables/S7_engagement_definitions.csv,"Researcher engagement labels, counting a grant in its start year only or in every year it runs.",Full grant span (%),number,percent,"Share when a grant counts in every year it runs, %"
+outputs/tables/S8_topic_coherence.csv,Mean c_v topic coherence for LDA models with k = 2-12 topics.,k,integer,,Number of topics
+outputs/tables/S8_topic_coherence.csv,Mean c_v topic coherence for LDA models with k = 2-12 topics.,c_v,number,,Mean c_v coherence
+outputs/tables/S9_topic_stability.csv,Share of grants that keep the same topic when the model is refitted with other random seeds.,k,integer,,Number of topics
+outputs/tables/S9_topic_stability.csv,Share of grants that keep the same topic when the model is refitted with other random seeds.,seed,integer,,Random seed of the refit
+outputs/tables/S9_topic_stability.csv,Share of grants that keep the same topic when the model is refitted with other random seeds.,agreement_pct,number,percent,"Grants keeping the same topic, %"
+outputs/tables/S10_topic_top_words.csv,"Top 50 words of each topic in the refitted k = 5 model. Columns are refit topic numbers: refit 4, 2, 3, 1 and 0 match the paper's topics 0 (bacterial genetics), 1 (antibiotic resistance), 2 (immunotherapy), 4 (infectious disease control) and 3 (unclassified).",topic_0,string,,Top words of refit topic 0 (see table description for the match to paper topics)
+outputs/tables/S10_topic_top_words.csv,"Top 50 words of each topic in the refitted k = 5 model. Columns are refit topic numbers: refit 4, 2, 3, 1 and 0 match the paper's topics 0 (bacterial genetics), 1 (antibiotic resistance), 2 (immunotherapy), 4 (infectious disease control) and 3 (unclassified).",topic_1,string,,Top words of refit topic 1 (see table description for the match to paper topics)
+outputs/tables/S10_topic_top_words.csv,"Top 50 words of each topic in the refitted k = 5 model. Columns are refit topic numbers: refit 4, 2, 3, 1 and 0 match the paper's topics 0 (bacterial genetics), 1 (antibiotic resistance), 2 (immunotherapy), 4 (infectious disease control) and 3 (unclassified).",topic_2,string,,Top words of refit topic 2 (see table description for the match to paper topics)
+outputs/tables/S10_topic_top_words.csv,"Top 50 words of each topic in the refitted k = 5 model. Columns are refit topic numbers: refit 4, 2, 3, 1 and 0 match the paper's topics 0 (bacterial genetics), 1 (antibiotic resistance), 2 (immunotherapy), 4 (infectious disease control) and 3 (unclassified).",topic_3,string,,Top words of refit topic 3 (see table description for the match to paper topics)
+outputs/tables/S10_topic_top_words.csv,"Top 50 words of each topic in the refitted k = 5 model. Columns are refit topic numbers: refit 4, 2, 3, 1 and 0 match the paper's topics 0 (bacterial genetics), 1 (antibiotic resistance), 2 (immunotherapy), 4 (infectious disease control) and 3 (unclassified).",topic_4,string,,Top words of refit topic 4 (see table description for the match to paper topics)
+outputs/tables/S11_global_south_recipients.csv,Global South recipient countries: recipient entries and recorded funding (fractional counting).,country,string,,Country
+outputs/tables/S11_global_south_recipients.csv,Global South recipient countries: recipient entries and recorded funding (fractional counting).,Recipient entries,integer,,Recipient institutions counted (one per grant and institution)
+outputs/tables/S11_global_south_recipients.csv,Global South recipient countries: recipient entries and recorded funding (fractional counting).,USD (M),number,USD million,"Recorded funding, USD million"
+outputs/tables/S11_global_south_recipients.csv,Global South recipient countries: recipient entries and recorded funding (fractional counting).,Share of all funding (%),number,percent,"Share of all recorded funding, %"
+outputs/tables/S12_domestic_vs_crossborder.csv,Domestic and cross-border funding (domestic: every recipient institution in the funder's country).,domestic,string,,Domestic or cross-border
+outputs/tables/S12_domestic_vs_crossborder.csv,Domestic and cross-border funding (domestic: every recipient institution in the funder's country).,Grants,integer,,Number of grants
+outputs/tables/S12_domestic_vs_crossborder.csv,Domestic and cross-border funding (domestic: every recipient institution in the funder's country).,USD (M),number,USD million,"Recorded funding, USD million"
+outputs/tables/S12_domestic_vs_crossborder.csv,Domestic and cross-border funding (domestic: every recipient institution in the funder's country).,Share of funding (%),number,percent,"Share of recorded funding, %"
+outputs/tables/S13_crossborder_funders.csv,Largest cross-border funders.,Funder,string,,Funder name
+outputs/tables/S13_crossborder_funders.csv,Largest cross-border funders.,Cross-border grants,integer,,Grants with at least one recipient outside the funder's country
+outputs/tables/S13_crossborder_funders.csv,Largest cross-border funders.,USD (M),number,USD million,"Recorded funding, USD million"
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,Funder,string,,Funder name
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,1999,integer,,Grants starting in 1999
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2000,integer,,Grants starting in 2000
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2001,integer,,Grants starting in 2001
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2002,integer,,Grants starting in 2002
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2003,integer,,Grants starting in 2003
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2004,integer,,Grants starting in 2004
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2005,integer,,Grants starting in 2005
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2006,integer,,Grants starting in 2006
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2007,integer,,Grants starting in 2007
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2008,integer,,Grants starting in 2008
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2009,integer,,Grants starting in 2009
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2010,integer,,Grants starting in 2010
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2011,integer,,Grants starting in 2011
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2012,integer,,Grants starting in 2012
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2013,integer,,Grants starting in 2013
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2014,integer,,Grants starting in 2014
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2015,integer,,Grants starting in 2015
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2016,integer,,Grants starting in 2016
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2017,integer,,Grants starting in 2017
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2018,integer,,Grants starting in 2018
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2019,integer,,Grants starting in 2019
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2020,integer,,Grants starting in 2020
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2021,integer,,Grants starting in 2021
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2022,integer,,Grants starting in 2022
+outputs/tables/S14_funder_by_year.csv,Grants per start year for the 15 funders with the most grants.,2023,integer,,Grants starting in 2023
+outputs/tables/S15_topic_share_by_funder.csv,Topic shares (% of each funder's grants) for the 15 funders with the most grants.,Funder,string,,Funder name
+outputs/tables/S15_topic_share_by_funder.csv,Topic shares (% of each funder's grants) for the 15 funders with the most grants.,Infectious disease control,number,,% of the funder's grants in 'Infectious disease control'
+outputs/tables/S15_topic_share_by_funder.csv,Topic shares (% of each funder's grants) for the 15 funders with the most grants.,Bacterial genetics and mechanisms,number,,% of the funder's grants in 'Bacterial genetics and mechanisms'
+outputs/tables/S15_topic_share_by_funder.csv,Topic shares (% of each funder's grants) for the 15 funders with the most grants.,Antibiotic resistance strategies,number,,% of the funder's grants in 'Antibiotic resistance strategies'
+outputs/tables/S15_topic_share_by_funder.csv,Topic shares (% of each funder's grants) for the 15 funders with the most grants.,Immunotherapy and targeted treatments,number,,% of the funder's grants in 'Immunotherapy and targeted treatments'
+outputs/tables/S16_topic_share_by_recipient.csv,Topic shares (% of each country's grants) for the 15 largest recipient countries.,Unnamed: 0,string,,Row label: Recipient country
+outputs/tables/S16_topic_share_by_recipient.csv,Topic shares (% of each country's grants) for the 15 largest recipient countries.,Infectious disease control,number,,% of the country's grants in 'Infectious disease control'
+outputs/tables/S16_topic_share_by_recipient.csv,Topic shares (% of each country's grants) for the 15 largest recipient countries.,Bacterial genetics and mechanisms,number,,% of the country's grants in 'Bacterial genetics and mechanisms'
+outputs/tables/S16_topic_share_by_recipient.csv,Topic shares (% of each country's grants) for the 15 largest recipient countries.,Antibiotic resistance strategies,number,,% of the country's grants in 'Antibiotic resistance strategies'
+outputs/tables/S16_topic_share_by_recipient.csv,Topic shares (% of each country's grants) for the 15 largest recipient countries.,Immunotherapy and targeted treatments,number,,% of the country's grants in 'Immunotherapy and targeted treatments'
+outputs/tables/S17_topic_distinctive_words.csv,"Most distinctive words of each topic, ranked.",Infectious disease control,string,,"Distinctive words of 'Infectious disease control', ranked"
+outputs/tables/S17_topic_distinctive_words.csv,"Most distinctive words of each topic, ranked.",Bacterial genetics and mechanisms,string,,"Distinctive words of 'Bacterial genetics and mechanisms', ranked"
+outputs/tables/S17_topic_distinctive_words.csv,"Most distinctive words of each topic, ranked.",Antibiotic resistance strategies,string,,"Distinctive words of 'Antibiotic resistance strategies', ranked"
+outputs/tables/S17_topic_distinctive_words.csv,"Most distinctive words of each topic, ranked.",Immunotherapy and targeted treatments,string,,"Distinctive words of 'Immunotherapy and targeted treatments', ranked"
+outputs/tables/S18_topic_jaccard.csv,Jaccard similarity between the top-word sets of the topics.,Unnamed: 0,string,,Row label: Topic
+outputs/tables/S18_topic_jaccard.csv,Jaccard similarity between the top-word sets of the topics.,Infectious disease control,number,,Jaccard similarity with 'Infectious disease control'
+outputs/tables/S18_topic_jaccard.csv,Jaccard similarity between the top-word sets of the topics.,Bacterial genetics and mechanisms,number,,Jaccard similarity with 'Bacterial genetics and mechanisms'
+outputs/tables/S18_topic_jaccard.csv,Jaccard similarity between the top-word sets of the topics.,Antibiotic resistance strategies,number,,Jaccard similarity with 'Antibiotic resistance strategies'
+outputs/tables/S18_topic_jaccard.csv,Jaccard similarity between the top-word sets of the topics.,Immunotherapy and targeted treatments,number,,Jaccard similarity with 'Immunotherapy and targeted treatments'
+outputs/tables/S19_researchers_by_gender_year.csv,Named researchers by inferred gender and start year.,year,integer,,Grant start year
+outputs/tables/S19_researchers_by_gender_year.csv,Named researchers by inferred gender and start year.,Male,integer,,Named researchers inferred as men
+outputs/tables/S19_researchers_by_gender_year.csv,Named researchers by inferred gender and start year.,Female,integer,,Named researchers inferred as women
+outputs/tables/S19_researchers_by_gender_year.csv,Named researchers by inferred gender and start year.,Unknown,integer,,Named researchers whose gender could not be inferred
+outputs/tables/S19_researchers_by_gender_year.csv,Named researchers by inferred gender and start year.,Female share (%),number,percent,"Women among named researchers with inferred gender, %"
+outputs/tables/S20_team_gender_by_topic.csv,"Team gender composition by topic, % of grants.",topic,string,,"Research topic (LDA, k = 5)"
+outputs/tables/S20_team_gender_by_topic.csv,"Team gender composition by topic, % of grants.",Male only,number,,"Grants with only men named, %"
+outputs/tables/S20_team_gender_by_topic.csv,"Team gender composition by topic, % of grants.",Mixed,number,,"Grants with women and men named, %"
+outputs/tables/S20_team_gender_by_topic.csv,"Team gender composition by topic, % of grants.",Female only,number,,"Grants with only women named, %"
+outputs/tables/S20_team_gender_by_topic.csv,"Team gender composition by topic, % of grants.",Gender unknown,number,,"Grants with no researcher of known gender, %"
+outputs/tables/S21_researcher_engagement_by_year.csv,Researcher engagement labels by year.,group,string,,Group of researchers
+outputs/tables/S21_researcher_engagement_by_year.csv,Researcher engagement labels by year.,year,integer,,Grant start year
+outputs/tables/S21_researcher_engagement_by_year.csv,Researcher engagement labels by year.,Continuant,integer,,Entities active before and after this year
+outputs/tables/S21_researcher_engagement_by_year.csv,Researcher engagement labels by year.,Newcomer,integer,,Entities active for the first time
+outputs/tables/S21_researcher_engagement_by_year.csv,Researcher engagement labels by year.,Terminator,integer,,Entities active before but not after
+outputs/tables/S21_researcher_engagement_by_year.csv,Researcher engagement labels by year.,Transient,integer,,Entities active in one year only
+outputs/tables/S22_institution_engagement_by_topic.csv,Institution engagement labels by topic and year.,topic,string,,"Research topic (LDA, k = 5)"
+outputs/tables/S22_institution_engagement_by_topic.csv,Institution engagement labels by topic and year.,year,integer,,Grant start year
+outputs/tables/S22_institution_engagement_by_topic.csv,Institution engagement labels by topic and year.,Continuant,integer,,Entities active before and after this year
+outputs/tables/S22_institution_engagement_by_topic.csv,Institution engagement labels by topic and year.,Newcomer,integer,,Entities active for the first time
+outputs/tables/S22_institution_engagement_by_topic.csv,Institution engagement labels by topic and year.,Terminator,integer,,Entities active before but not after
+outputs/tables/S22_institution_engagement_by_topic.csv,Institution engagement labels by topic and year.,Transient,integer,,Entities active in one year only
+outputs/tables/S23_country_flows.csv,Grants and recorded funding from funder country to recipient country (fractional counting).,Funder Country,string,,Funder country
+outputs/tables/S23_country_flows.csv,Grants and recorded funding from funder country to recipient country (fractional counting).,Recipient country,string,,Recipient country
+outputs/tables/S23_country_flows.csv,Grants and recorded funding from funder country to recipient country (fractional counting).,Grants (fractional),number,,"Grants, fractional by recipient institution"
+outputs/tables/S23_country_flows.csv,Grants and recorded funding from funder country to recipient country (fractional counting).,Domestic,boolean,,True when funder and recipient country are the same
+outputs/tables/S23_country_flows.csv,Grants and recorded funding from funder country to recipient country (fractional counting).,"USD (M, fractional)",number,,"Recorded funding, fractional by recipient institution, USD million"
+outputs/tables/S24_concentration.csv,"Concentration of recorded funding: HHI (0-10,000), Gini and top 10% share.",Unit,string,,Unit of analysis
+outputs/tables/S24_concentration.csv,"Concentration of recorded funding: HHI (0-10,000), Gini and top 10% share.",N,integer,,Number of grants or units
+outputs/tables/S24_concentration.csv,"Concentration of recorded funding: HHI (0-10,000), Gini and top 10% share.","HHI (0-10,000)",number,"index, 0-10,000","Herfindahl-Hirschman index (0-10,000)"
+outputs/tables/S24_concentration.csv,"Concentration of recorded funding: HHI (0-10,000), Gini and top 10% share.",Gini,number,,"Gini coefficient (0 = equal, 1 = all to one unit)"
+outputs/tables/S24_concentration.csv,"Concentration of recorded funding: HHI (0-10,000), Gini and top 10% share.",Top 10% share (%),number,percent,"Share received by the top 10% of units, %"
+outputs/tables/S24_concentration.csv,"Concentration of recorded funding: HHI (0-10,000), Gini and top 10% share.",Largest unit,string,,Unit with the largest share
+outputs/tables/S24_concentration.csv,"Concentration of recorded funding: HHI (0-10,000), Gini and top 10% share.",Largest share (%),number,percent,"Share of the largest unit, %"
+outputs/tables/S25_shares_by_period.csv,"Shares of recorded funding from US funders and NIAID, and funder HHI, by period.",Period,string,,Period of grant start years
+outputs/tables/S25_shares_by_period.csv,"Shares of recorded funding from US funders and NIAID, and funder HHI, by period.",Grants,integer,,Number of grants
+outputs/tables/S25_shares_by_period.csv,"Shares of recorded funding from US funders and NIAID, and funder HHI, by period.",Total (USD M),number,USD million,"Recorded funding, USD million"
+outputs/tables/S25_shares_by_period.csv,"Shares of recorded funding from US funders and NIAID, and funder HHI, by period.",US funders (%),number,percent,"Share from US funders, %"
+outputs/tables/S25_shares_by_period.csv,"Shares of recorded funding from US funders and NIAID, and funder HHI, by period.",NIAID (%),number,percent,"Share from NIAID, %"
+outputs/tables/S25_shares_by_period.csv,"Shares of recorded funding from US funders and NIAID, and funder HHI, by period.",Funder HHI,number,"index, 0-10,000","HHI across funders (0-10,000)"
+outputs/tables/S26_collaboration.csv,"Collaboration counts: grants with several recipient institutions or countries, and North-South grants.",Measure,string,,Measure
+outputs/tables/S26_collaboration.csv,"Collaboration counts: grants with several recipient institutions or countries, and North-South grants.",Count,integer,,Number of grants or pairs
+outputs/tables/S26_collaboration.csv,"Collaboration counts: grants with several recipient institutions or countries, and North-South grants.",Share of grants (%),number,percent,"Share of the 802 grants, %"
+outputs/tables/S27_without_niaid.csv,"Growth, US share and concentration with and without NIAID grants.",Sample,string,,Grants included
+outputs/tables/S27_without_niaid.csv,"Growth, US share and concentration with and without NIAID grants.",Grants,integer,,Number of grants
+outputs/tables/S27_without_niaid.csv,"Growth, US share and concentration with and without NIAID grants.",Total (USD M),number,USD million,"Recorded funding, USD million"
+outputs/tables/S27_without_niaid.csv,"Growth, US share and concentration with and without NIAID grants.",Grant growth (%/yr),number,percent,"Annual growth in grants, %"
+outputs/tables/S27_without_niaid.csv,"Growth, US share and concentration with and without NIAID grants.",Grant growth CI,string,,95% CI of grant growth
+outputs/tables/S27_without_niaid.csv,"Growth, US share and concentration with and without NIAID grants.",Funding growth (%/yr),number,percent,"Annual growth in recorded funding, %"
+outputs/tables/S27_without_niaid.csv,"Growth, US share and concentration with and without NIAID grants.",Funding growth CI,string,,95% CI of funding growth
+outputs/tables/S27_without_niaid.csv,"Growth, US share and concentration with and without NIAID grants.",US funders (%),number,percent,"Share from US funders, %"
+outputs/tables/S27_without_niaid.csv,"Growth, US share and concentration with and without NIAID grants.",Funder HHI,number,"index, 0-10,000","HHI across funders (0-10,000)"
+outputs/tables/S27_without_niaid.csv,"Growth, US share and concentration with and without NIAID grants.",Funder-country HHI,number,"index, 0-10,000","HHI across funder countries (0-10,000)"
+outputs/tables/S28_real_growth.csv,Annual growth of recorded funding in nominal and constant 2023 US dollars (CPI-U).,Unnamed: 0,string,,Row label: Dollar basis (nominal or constant 2023 USD)
+outputs/tables/S28_real_growth.csv,Annual growth of recorded funding in nominal and constant 2023 US dollars (CPI-U).,annual_growth_pct,number,percent,"Annual growth from a log-linear fit, %"
+outputs/tables/S28_real_growth.csv,Annual growth of recorded funding in nominal and constant 2023 US dollars (CPI-U).,ci_low,number,,Lower bound of the 95% confidence interval
+outputs/tables/S28_real_growth.csv,Annual growth of recorded funding in nominal and constant 2023 US dollars (CPI-U).,ci_high,number,,Upper bound of the 95% confidence interval
+outputs/tables/S28_real_growth.csv,Annual growth of recorded funding in nominal and constant 2023 US dollars (CPI-U).,years,string,,Years used for the estimate
+outputs/tables/S28_real_growth.csv,Annual growth of recorded funding in nominal and constant 2023 US dollars (CPI-U).,Total (USD M),number,USD million,"Recorded funding, USD million"
+outputs/tables/S29_screening_flow.csv,Screening flow from the Dimensions export to the analysed grants.,Step,string,,Screening step
+outputs/tables/S29_screening_flow.csv,Screening flow from the Dimensions export to the analysed grants.,Records,integer,,Records left after the step
+outputs/tables/S29_screening_flow.csv,Screening flow from the Dimensions export to the analysed grants.,Note,string,,Note
+outputs/tables/S30_award_types.csv,Award types among relevant grants with and without a recorded amount.,Award type,string,,"Award type (research grant, training award, capacity funding)"
+outputs/tables/S30_award_types.csv,Award types among relevant grants with and without a recorded amount.,With an amount (n),integer,,Relevant grants with a recorded amount
+outputs/tables/S30_award_types.csv,Award types among relevant grants with and without a recorded amount.,Without an amount (n),integer,,Relevant grants without an amount
+outputs/tables/S30_award_types.csv,Award types among relevant grants with and without a recorded amount.,With an amount (%),number,percent,"Share of grants with an amount, %"
+outputs/tables/S30_award_types.csv,Award types among relevant grants with and without a recorded amount.,Without an amount (%),number,percent,"Share of grants without an amount, %"
+outputs/tables/S31_count_based_shares.csv,Count-based shares (% of grants) with and without the 272 grants that have no amount.,Measure (share of grants),string,,"Measure, as % of grants"
+outputs/tables/S31_count_based_shares.csv,Count-based shares (% of grants) with and without the 272 grants that have no amount.,With an amount,number,,Among the 802 grants with an amount
+outputs/tables/S31_count_based_shares.csv,Count-based shares (% of grants) with and without the 272 grants that have no amount.,Without an amount,number,,Among the 272 grants without an amount
+outputs/tables/S31_count_based_shares.csv,Count-based shares (% of grants) with and without the 272 grants that have no amount.,All relevant grants,number,,"Among all 1,074 relevant grants"
+outputs/tables/S31_count_based_shares.csv,Count-based shares (% of grants) with and without the 272 grants that have no amount.,"All, without training awards",number,,"Among relevant grants, training awards excluded"
+outputs/tables/S32_imputed_amount_scenarios.csv,Shares of funding with imputed amounts for grants without an amount.,Measure,string,,Measure
+outputs/tables/S32_imputed_amount_scenarios.csv,Shares of funding with imputed amounts for grants without an amount.,Recorded amounts only (main analysis),number,,Value in the main analysis
+outputs/tables/S32_imputed_amount_scenarios.csv,Shares of funding with imputed amounts for grants without an amount.,"Imputed, low (25th percentile)",number,,Value with missing amounts imputed at the 25th percentile
+outputs/tables/S32_imputed_amount_scenarios.csv,Shares of funding with imputed amounts for grants without an amount.,"Imputed, central (median)",number,,Value with missing amounts imputed at the median
+outputs/tables/S32_imputed_amount_scenarios.csv,Shares of funding with imputed amounts for grants without an amount.,"Imputed, high (75th percentile)",number,,Value with missing amounts imputed at the 75th percentile
+outputs/tables/S33_projects.csv,Yearly grant records merged into projects.,Measure,string,,Measure
+outputs/tables/S33_projects.csv,Yearly grant records merged into projects.,Grant records,number,,Yearly grant records
+outputs/tables/S33_projects.csv,Yearly grant records merged into projects.,Projects,number,,Projects after merging yearly records
+outputs/tables/S34_gender_subsets.csv,Female-only vs male-only grant size gap in subsets of grants.,Subset,string,,Subset of grants
+outputs/tables/S34_gender_subsets.csv,Female-only vs male-only grant size gap in subsets of grants.,Grants in model,integer,,Grants included in the regression
+outputs/tables/S34_gender_subsets.csv,Female-only vs male-only grant size gap in subsets of grants.,Female-only vs male-only (%),number,percent,"Adjusted difference in grant size, female-only vs male-only teams, %"
+outputs/tables/S34_gender_subsets.csv,Female-only vs male-only grant size gap in subsets of grants.,95% CI low (%),number,percent,"Lower bound of the 95% CI, %"
+outputs/tables/S34_gender_subsets.csv,Female-only vs male-only grant size gap in subsets of grants.,95% CI high (%),number,percent,"Upper bound of the 95% CI, %"
+outputs/tables/S34_gender_subsets.csv,Female-only vs male-only grant size gap in subsets of grants.,p,number,,p-value
+outputs/tables/S35_topic_probability_shares.csv,"Topic shares of funding from the stored assignment, the refitted model, and split by topic probability.",Topic,string,,Research topic
+outputs/tables/S35_topic_probability_shares.csv,"Topic shares of funding from the stored assignment, the refitted model, and split by topic probability.","One topic per grant, paper assignment (%)",number,percent,"Share of funding, one topic per grant, stored assignment, %"
+outputs/tables/S35_topic_probability_shares.csv,"Topic shares of funding from the stored assignment, the refitted model, and split by topic probability.","One topic per grant, refit (%)",number,percent,"Share of funding, one topic per grant, refitted model, %"
+outputs/tables/S35_topic_probability_shares.csv,"Topic shares of funding from the stored assignment, the refitted model, and split by topic probability.","Split by topic probability, refit (%)",number,percent,"Share of funding split by topic probability, refitted model, %"
+outputs/tables/S35_topic_probability_shares.csv,"Topic shares of funding from the stored assignment, the refitted model, and split by topic probability.","1999-2005, paper assignment (%)",number,percent,"Share in 1999-2005, stored assignment, %"
+outputs/tables/S35_topic_probability_shares.csv,"Topic shares of funding from the stored assignment, the refitted model, and split by topic probability.","1999-2005, split, refit (%)",number,percent,"Share in 1999-2005, split by probability, %"
+outputs/tables/S35_topic_probability_shares.csv,"Topic shares of funding from the stored assignment, the refitted model, and split by topic probability.","2016-2023, paper assignment (%)",number,percent,"Share in 2016-2023, stored assignment, %"
+outputs/tables/S35_topic_probability_shares.csv,"Topic shares of funding from the stored assignment, the refitted model, and split by topic probability.","2016-2023, split, refit (%)",number,percent,"Share in 2016-2023, split by probability, %"
+outputs/tables/S36_robustness_summary.csv,Headline results under each sensitivity check.,Check,string,,Sensitivity check
+outputs/tables/S36_robustness_summary.csv,Headline results under each sensitivity check.,Funding growth (%/yr),string,percent,"Annual growth in recorded funding, %"
+outputs/tables/S36_robustness_summary.csv,Headline results under each sensitivity check.,Global South recipients (% of funding),string,percent,"Share received by the Global South, %"
+outputs/tables/S36_robustness_summary.csv,Headline results under each sensitivity check.,Low + lower-middle income recipients (%),string,percent,"Share received by low- and lower-middle-income countries, %"
+outputs/tables/S36_robustness_summary.csv,Headline results under each sensitivity check.,US funders (% of funding),string,percent,"Share from US funders, %"
+outputs/tables/S36_robustness_summary.csv,Headline results under each sensitivity check.,NIAID (% of funding),string,percent,"Share from NIAID, %"
+outputs/tables/S36_robustness_summary.csv,Headline results under each sensitivity check.,Female-only grant gap (%),string,percent,"Adjusted female-only vs male-only grant size gap, %"
+outputs/tables/S36_robustness_summary.csv,Headline results under each sensitivity check.,One-year-only researchers (%),string,percent,"Researchers active in a single year, %"
+outputs/tables/S36_robustness_summary.csv,Headline results under each sensitivity check.,"Rise in antibiotic-resistance share, 1999-2005 to 2016-2023 (points)",string,percentage points,"Change in the antibiotic-resistance topic share, percentage points"
+outputs/tables/paper_numbers.csv,"Every number quoted in the paper: section, claim, value as printed and source.",section,string,,Section of the paper
+outputs/tables/paper_numbers.csv,"Every number quoted in the paper: section, claim, value as printed and source.",claim,string,,What the number measures
+outputs/tables/paper_numbers.csv,"Every number quoted in the paper: section, claim, value as printed and source.",value,string,,Value as printed in the paper
+outputs/tables/paper_numbers.csv,"Every number quoted in the paper: section, claim, value as printed and source.",source,string,,"Table, figure or code that produces it"
+outputs/explorer/cube.csv,"Explorer data cube: grants and recorded funding by year, funder country, funder, recipient country, income group and topic (fractional counting).",year,integer,,Grant start year
+outputs/explorer/cube.csv,"Explorer data cube: grants and recorded funding by year, funder country, funder, recipient country, income group and topic (fractional counting).",funder_country,string,,Country of the funder
+outputs/explorer/cube.csv,"Explorer data cube: grants and recorded funding by year, funder country, funder, recipient country, income group and topic (fractional counting).",funder,string,,Funder name
+outputs/explorer/cube.csv,"Explorer data cube: grants and recorded funding by year, funder country, funder, recipient country, income group and topic (fractional counting).",recipient_country,string,,Country of the recipient institution
+outputs/explorer/cube.csv,"Explorer data cube: grants and recorded funding by year, funder country, funder, recipient country, income group and topic (fractional counting).",recipient_income,string,,World Bank income group (FY2024) of the recipient country
+outputs/explorer/cube.csv,"Explorer data cube: grants and recorded funding by year, funder country, funder, recipient country, income group and topic (fractional counting).",topic,string,,"Research topic (LDA, k = 5)"
+outputs/explorer/cube.csv,"Explorer data cube: grants and recorded funding by year, funder country, funder, recipient country, income group and topic (fractional counting).",grants,number,,Grants (fractional: a grant shared by k institutions counts 1/k for each)
+outputs/explorer/cube.csv,"Explorer data cube: grants and recorded funding by year, funder country, funder, recipient country, income group and topic (fractional counting).",usd,number,USD,"Recorded funding, nominal US dollars as converted by Dimensions (fractional)"
+data/reference/country_classification.csv,"Country to World Bank income group (FY2024), Global North/South and OECD DAC ODA-recipient status.",country,string,,Country
+data/reference/country_classification.csv,"Country to World Bank income group (FY2024), Global North/South and OECD DAC ODA-recipient status.",north_south,string,,Global North or Global South
+data/reference/country_classification.csv,"Country to World Bank income group (FY2024), Global North/South and OECD DAC ODA-recipient status.",income_group,string,,World Bank income group (FY2024)
+data/reference/country_classification.csv,"Country to World Bank income group (FY2024), Global North/South and OECD DAC ODA-recipient status.",note,string,,Note on the classification
+data/reference/country_classification.csv,"Country to World Bank income group (FY2024), Global North/South and OECD DAC ODA-recipient status.",source,string,,"Table, figure or code that produces it"
+data/reference/country_classification.csv,"Country to World Bank income group (FY2024), Global North/South and OECD DAC ODA-recipient status.",oecd_dac_2024,string,,OECD DAC ODA-recipient status (2024-25)
+data/reference/cpi_u_annual.csv,"Annual average US consumer price index (CPI-U), 1999-2023, used for constant-dollar growth.",year,integer,,Grant start year
+data/reference/cpi_u_annual.csv,"Annual average US consumer price index (CPI-U), 1999-2023, used for constant-dollar growth.",cpi_u_annual_avg,number,,Annual average CPI-U (1982-84 = 100)
+data/reference/cpi_u_annual.csv,"Annual average US consumer price index (CPI-U), 1999-2023, used for constant-dollar growth.",source,string,,"Table, figure or code that produces it"
+data/reference/nih_reporter_crosscheck.csv,"Yearly NIH totals in this dataset, with an empty column for the same search in NIH RePORTER.",year,integer,,Grant start year
+data/reference/nih_reporter_crosscheck.csv,"Yearly NIH totals in this dataset, with an empty column for the same search in NIH RePORTER.",this_dataset_usd_m,number,,"NIH funding in this dataset, USD million"
+data/reference/nih_reporter_crosscheck.csv,"Yearly NIH totals in this dataset, with an empty column for the same search in NIH RePORTER.",reporter_usd_m,number,,"Same search in NIH RePORTER, USD million (to fill)"
+data/reference/ppp_price_level_2023.csv,"Recipient countries, with an empty column for the World Bank price level ratio (PA.NUS.PPPC.RF).",country,string,,Country
+data/reference/ppp_price_level_2023.csv,"Recipient countries, with an empty column for the World Bank price level ratio (PA.NUS.PPPC.RF).",price_level_ratio_2023,number,,"World Bank price level ratio, 2023 (to fill)"
