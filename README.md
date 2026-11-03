@@ -6,6 +6,8 @@ The analysis covers 802 phage therapy research grants with a recorded amount (US
 
 **Every number, table and figure in the paper is produced by the code here.** Notebook 07 recomputes each number the paper quotes and checks the text against it.
 
+An interactive explorer of the data is online at **https://cognosx.ca/phage-funding**.
+
 ## Quick start
 
 **To look at the results**, no installation is needed. Open `outputs/figures/` and `outputs/tables/`. `outputs/tables/key_numbers.json` holds the headline values, and `outputs/tables/paper_numbers.csv` lists every number in the paper with its source.
@@ -17,7 +19,7 @@ conda activate phagefund
 # put the input files in data/raw/
 ./run_all.sh
 ```
-`run_all.sh` runs the seven notebooks in order and writes every figure and table to `outputs/`. It takes about half an hour, mostly the topic model.
+`run_all.sh` runs the eight notebooks in order and writes every figure and table to `outputs/`. It takes about half an hour, mostly the topic model.
 
 ## Main findings
 | Finding | Value | Source |
@@ -47,21 +49,29 @@ conda activate phagefund
 │   ├── 04_supplementary_figures.ipynb   Figures S2–S10, Tables S14–S23
 │   ├── 05_concentration_and_sensitivity.ipynb   Figure 5, Tables S24–S28
 │   ├── 06_robustness.ipynb        Figures S11–S12, Tables S29–S36
-│   └── 07_paper_numbers.ipynb     every number quoted in the paper, checked against the text
+│   ├── 07_paper_numbers.ipynb     every number quoted in the paper, checked against the text
+│   └── 08_open_dataset.ipynb      explorer data, data dictionary, data package
 ├── src/
 │   ├── preprocess.py              joins grants, institutions, gender and topics
 │   ├── topics.py                  text cleaning, LDA, coherence, stability
 │   ├── phagefund.py               growth, fractional counting, concentration, gender models, engagement
 │   ├── robustness.py              award types, grants without an amount, imputation, projects
 │   ├── paper_numbers.py           the paper's numbers and the manuscript check
+│   ├── open_data.py               explorer data cube, data dictionary, data package
 │   └── figures.py                 figure style and plotting blocks
 ├── outputs/
 │   ├── figures/                   Fig1–Fig5, FigS1–S12 (PNG 300 dpi and PDF; FigS10 is interactive HTML)
-│   └── tables/                    Tables 1–5, S1–S36, key_numbers.json, paper_numbers.csv
+│   ├── tables/                    Tables 1–5, S1–S36, key_numbers.json, paper_numbers.csv
+│   └── explorer/                  cube.csv and meta.json, the data behind the online explorer
 ├── data/
 │   ├── README.md                  every input file, what it holds and how to obtain it
 │   └── reference/                 public: country classification, CPI-U, cross-check templates
-├── docs/methods.md                search query and methods in full
+├── docs/
+│   ├── methods.md                 search query and methods in full
+│   ├── DATASHEET.md               what the data is for, how it was made, its limits
+│   └── data_dictionary.csv        every column of every public file: type, unit, meaning
+├── datapackage.json               machine-readable description of the data (Frictionless)
+├── CHANGELOG.md
 ├── environment.yml
 └── run_all.sh
 ```
@@ -105,6 +115,7 @@ conda activate phagefund
 | Table S35: topic shares from topic probabilities | 06 | `S35_topic_probability_shares.csv` |
 | Figure S12, Table S36: robustness summary | 06 | `FigS12_robustness`, `S36_robustness_summary.csv` |
 | Every number quoted in the paper | 07 | `paper_numbers.csv` |
+| Explorer data, data dictionary, data package | 08 | `outputs/explorer/`, `docs/data_dictionary.csv`, `datapackage.json` |
 
 In the manuscript, Figure 6 is `FigS11_screening_flow`, Table 3 is `Table4_gender` with `S3_gender_tests`, and Supplementary Tables S37 and S38 are `Table3_topics` and `Table5_income_groups`.
 
@@ -119,6 +130,14 @@ In the manuscript, Figure 6 is `FigS11_screening_flow`, Table 3 is `Table4_gende
 - **Gender.** Inferred from first names, so binary.
 - **Topics.** About 60% of grants keep the same topic when the random seed changes (Table S9). Read topic results as trends (Table S35).
 
+## Open dataset
+The aggregate data are open for reuse:
+- `outputs/tables/`: the tables behind every figure and number in the paper;
+- `outputs/explorer/cube.csv`: grants and recorded funding by year, funder country, funder, recipient country, income group and topic (fractional counting), the data behind the explorer;
+- `data/reference/`: the country classification and price tables.
+
+`docs/data_dictionary.csv` describes every column, `docs/DATASHEET.md` says what the data can and cannot be used for, and `datapackage.json` lets tools such as Frictionless load and check the files. Each release is archived on Zenodo with a DOI; see `CHANGELOG.md`.
+
 ## Licence and citation
-Code: MIT (`LICENSE`). Cite with `CITATION.cff`.
-Grant-level data are not redistributed (Dimensions terms of use); see `data/README.md`.
+Data: CC BY 4.0 (`LICENSE-data.md`). Code: MIT (`LICENSE`). Cite with `CITATION.cff`.
+Grant-level data, the Dimensions export and researcher names are not redistributed (Dimensions terms of use; privacy); see `data/README.md`.

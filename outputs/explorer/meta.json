@@ -1,0 +1,9 @@
+{
+ "title": "Who funds phage therapy research?",
+ "version": "1.0.0",
+ "source": "Dimensions grants database, searched 13 February 2024",
+ "coverage": "802 grants with a recorded amount, 1999-2023",
+ "counting": "fractional by recipient institution",
+ "page": "https://cognosx.ca/phage-funding",
+ "code": "https://github.com/descartesmbogning/phage-therapy-funding-complete"
+}

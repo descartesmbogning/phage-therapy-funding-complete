@@ -1,0 +1,14 @@
+{
+  "title": "Global phage therapy research funding, 1999–2023: code, aggregate data and documentation",
+  "upload_type": "dataset",
+  "description": "<p>Code, aggregate tables and documentation for the study <em>Twenty-five years of phage therapy funding: rapid growth, narrow base</em>. The analysis covers 802 phage therapy research grants with a recorded amount (USD 318.6 million, 1999–2023) from a Dimensions search of 13 February 2024. The release contains the tables behind every figure and number in the paper, the data behind the interactive explorer (https://cognosx.ca/phage-funding), a data dictionary, a datasheet and a Frictionless data package. Grant-level records and researcher names are not included. Data: CC BY 4.0. Code: MIT.</p>",
+  "creators": [
+    {"name": "Mbogning Fonkou, Maxime Descartes", "affiliation": "CognosX", "orcid": "0000-0001-5581-3891"},
+    {"name": "Yanwou, Nathan", "affiliation": "McGill University"},
+    {"name": "Bamou, Roland", "affiliation": "National Institute of Allergy and Infectious Diseases, National Institutes of Health"},
+    {"name": "Tsayem N, Idriss", "affiliation": "University of Maryland Medical Center"}
+  ],
+  "license": "cc-by-4.0",
+  "keywords": ["phage therapy", "bacteriophage", "research funding", "antimicrobial resistance", "global health equity", "science of science", "bibliometrics"],
+  "language": "eng"
+}

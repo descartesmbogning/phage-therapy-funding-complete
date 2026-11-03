@@ -34,4 +34,6 @@ Optional, filled by hand (see below): `recovered_amounts.csv`, `validation_scree
 | `interim/validation_topics_sample.xlsx` | 06: 100 grants (25 per topic) to hand-code; save filled as `raw/validation_topics.xlsx` |
 | `interim/validation_gender_sample.xlsx` | 06: 100 researcher names (blind) to check; save filled as `raw/validation_gender.xlsx` |
 
+Notebook 08 writes only public, aggregate files: `outputs/explorer/cube.csv`, `docs/data_dictionary.csv` and `datapackage.json`.
+
 Re-run notebook 06 after adding any filled file; it uses them automatically.
